@@ -1,0 +1,43 @@
+name: Feature Store Data trigger
+
+
+on:
+  schedule:
+    - cron: "0 6 */2 8,9 *" # runs every other day in August and September at 6 AM
+  workflow_dispatch:
+
+jobs:
+  nfl_madden_data_trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v4 # checkout the repository content to GitHub runner
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10.5' # install the python version needed
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Run AV Collection
+        run: python raw_approximate_value_runner.py
+
+      - name: Run Madden Pipeline
+        run: python madden_runner.py
+
+      - name: commit files
+        run: |
+          CURRENT_DATE=$(date +'%Y%m%d')
+          COMMIT_MESSAGE="update data ($CURRENT_DATE)"
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "$COMMIT_MESSAGE" -a
+
+      - name: push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

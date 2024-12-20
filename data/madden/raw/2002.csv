@@ -1,0 +1,1878 @@
+Team,Position,Number,Name,Overall Rating
+Steelers,C,#64,Jeff Hartings,87
+Steelers,C,#56,Chucky Okobi,60
+Steelers,CB,#20,Dewayne Washington,87
+Steelers,CB,#30,Chad Scott,87
+Steelers,CB,#26,Deshea Townsend,78
+Steelers,CB,#22,Hank Poteat,51
+Steelers,DT,#98,Casey Hampton,83
+Steelers,DT,#96,Kendrick Clancy,73
+Steelers,DT,#93,Scott Schultz,42
+Steelers,FB,#35,Dan Kreider,76
+Steelers,FS,#27,Brent Alexander,71
+Steelers,FS,#28,Chris Hope,63
+Steelers,HB,#36,Jerome Bettis,88
+Steelers,HB,#21,Amos Zereque,79
+Steelers,HB,#45,Chris Fuamatu-Ma'fala,75
+Steelers,HB,#33,R.J. Bowers,41
+Steelers,K,#2,Todd Peterson,70
+Steelers,LE,#91,Aaron Smith,84
+Steelers,LE,#73,Chris Combs,49
+Steelers,LG,#66,Alan Faneca,93
+Steelers,LG,#68,Keydrick Vincent,66
+Steelers,LOLB,#92,Jason Gildon,92
+Steelers,LOLB,#53,Clark Haggans,52
+Steelers,LT,#72,Wayne Gandy,87
+Steelers,LT,#78,Mathias Nkwenti,59
+Steelers,MLB,#97,Kendrell Bell,87
+Steelers,MLB,#57,John Fiala,72
+Steelers,MLB,#58,James Farrior,72
+Steelers,P,#4,Josh Miller,86
+Steelers,QB,#10,Kordell Stewart,82
+Steelers,QB,#9,Charlie Batch,65
+Steelers,QB,#8,Tommy Maddox,59
+Steelers,QB,#17,Tee Martin,56
+Steelers,RE,#69,Kimo Von Oelhoffen,75
+Steelers,RE,#94,Rodney Bailey,66
+Steelers,RE,#76,Chris Hoke,45
+Steelers,RG,#71,Kendall Simmons,72
+Steelers,RG,#60,Oliver Ross,71
+Steelers,ROLB,#55,Joey Porter,90
+Steelers,ROLB,#90,Justin Kurpeikis,54
+Steelers,RT,#77,Marvin Smith,82
+Steelers,SS,#41,Lethon Flowers,87
+Steelers,SS,#31,Mike Logan,56
+Steelers,TE,#87,Mark Bruener,81
+Steelers,TE,#84,Jerame Tuman,64
+Steelers,TE,#48,Matt Cushing,54
+Steelers,WR,#86,Hines Ward,85
+Steelers,WR,#80,Plaxico Burress,83
+Steelers,WR,#85,Terance Mathis,70
+Steelers,WR,#81,Troy Edwards,66
+Steelers,WR,#82,Antwaan Randle El,66
+Steelers,WR,#83,Lenzie Jackson,58
+Browns,C,#64,Dave Wohlabaugh,71
+Browns,C,#65,Melvin Fowler,62
+Browns,C,#60,Shaun O'Hara,60
+Browns,CB,#25,Corey Fuller,75
+Browns,CB,#33,Daylon McCutcheon,75
+Browns,CB,#37,Anthony Henry,72
+Browns,CB,#21,Lewis Sanders,54
+Browns,CB,#27,Lamar Chapman,49
+Browns,DT,#94,Gerard Warren,84
+Browns,DT,#99,Orpheus Roye,73
+Browns,DT,#93,Mark Smith,69
+Browns,DT,#70,Alvin McKinley,51
+Browns,FB,#80,Aaron Shea,63
+Browns,FB,#28,J.J. Johnson,57
+Browns,FS,#23,Devin Bush,63
+Browns,FS,#20,Earl Little,60
+Browns,HB,#31,Willie Green,76
+Browns,HB,#29,James Jackson,73
+Browns,HB,#30,Jamel White,66
+Browns,K,#4,Phil Dawson,83
+Browns,LE,#90,Kenard Lang,74
+Browns,LE,#78,Tyrone Rogers,51
+Browns,LG,#79,Barry Stokes,68
+Browns,LG,#62,Richard Mercier,43
+Browns,LOLB,#95,Jamir Miller,89
+Browns,LOLB,#52,Brant Boyer,57
+Browns,LT,#77,Ross Verba,75
+Browns,LT,#69,Roger Chanoine,47
+Browns,MLB,#50,Earl Holmes,89
+Browns,MLB,#44,Andra Davis,59
+Browns,MLB,#55,Anthony Denman,35
+Browns,P,#17,Chris Gardocki,87
+Browns,QB,#2,Tim Couch,81
+Browns,QB,#10,Kelly Holcomb,47
+Browns,QB,#12,Josh Booty,39
+Browns,RE,#92,Courtney Brown,93
+Browns,RG,#67,Tre' Johnson,78
+Browns,RG,#63,Brad Bedell,40
+Browns,ROLB,#57,Dwayne Rudd,83
+Browns,ROLB,#56,Marquis Smith,55
+Browns,ROLB,#51,Lenoy Jones,50
+Browns,RT,#72,Ryan Tucker,76
+Browns,RT,#68,Joaquin Gonzale,60
+Browns,SS,#24,Robert Griffith,88
+Browns,SS,#36,Chris Akins,32
+Browns,TE,#82,Rickey Dudley,82
+Browns,TE,#83,Mark Campbell,45
+Browns,WR,#85,Kevin Johnson,85
+Browns,WR,#81,Quincy Morgan,73
+Browns,WR,#87,Andre Davis,69
+Browns,WR,#89,Chris Sanders,66
+Browns,WR,#88,JaJuan Dawson,65
+Browns,WR,#86,Dennis Northcutt,61
+Ravens,C,#61,Casey Rabach,66
+Ravens,C,#59,Joe Maese,36
+Ravens,CB,#21,Chris McAlister,88
+Ravens,CB,#28,Gary Baxter,69
+Ravens,CB,#38,James Trapp,69
+Ravens,CB,#24,Alvin Porter,62
+Ravens,CB,#37,Reggie Waddell,58
+Ravens,DT,#97,Kelly Gregg,60
+Ravens,DT,#91,Omari Jordan,50
+Ravens,DT,#92,Ma'ake Kemoeatu,48
+Ravens,FB,#39,Alan Richard,57
+Ravens,FS,#20,Edward Reed,77
+Ravens,HB,#31,Jamal Lewis,82
+Ravens,HB,#29,Chester Taylor,57
+Ravens,K,#3,Matt Stover,97
+Ravens,LE,#98,Anthony Weaver,68
+Ravens,LE,#94,Marques Douglas,45
+Ravens,LG,#62,Mike Flynn,57
+Ravens,LOLB,#58,Peter Boulware,93
+Ravens,LOLB,#54,Shannon Taylor,59
+Ravens,LT,#75,Jonathan Ogden,98
+Ravens,MLB,#52,Ray Lewis,99
+Ravens,MLB,#56,Edgerton Hartwell,60
+Ravens,P,#5,Dave Zastudil,64
+Ravens,QB,#11,Jeff Blake,72
+Ravens,QB,#7,Chris Redman,67
+Ravens,QB,#12,Wes Pate,49
+Ravens,RE,#99,Michael McCrary,90
+Ravens,RG,#66,Bennie Anderson,65
+Ravens,RG,#63,Mike Collins,50
+Ravens,ROLB,#96,Adalius Thomas,56
+Ravens,RT,#64,Edwin Mulitalo,83
+Ravens,RT,#65,Jason Thomas,50
+Ravens,SS,#42,Anthony Mitchell,62
+Ravens,SS,#49,Chad Williams,51
+Ravens,TE,#86,Todd Heap,78
+Ravens,TE,#82,Terry Jones,57
+Ravens,WR,#89,Travis Taylor,78
+Ravens,WR,#80,Brandon Stokley,67
+Ravens,WR,#83,Ron Johnson,66
+Ravens,WR,#45,Lamont Brightful,52
+Ravens,WR,#84,Javin Hunter,49
+Ravens,WR,#81,Kenyon Hambrick,48
+Bengals,C,#74,Rich Braham,65
+Bengals,C,#62,Brock Gutierrez,41
+Bengals,CB,#21,Jeff Burris,68
+Bengals,CB,#27,Artrell Hawkins,66
+Bengals,CB,#34,Kevin Kaesviharn,56
+Bengals,CB,#22,Rodney Heath,55
+Bengals,CB,#23,Robert Bean,55
+Bengals,DT,#91,Tony Williams,63
+Bengals,DT,#99,Oliver Gibson,63
+Bengals,DT,#97,Bernard Whittington,54
+Bengals,DT,#70,Glen Steele,32
+Bengals,FB,#41,Lorenzo Neal,89
+Bengals,FS,#24,Lamont Thompson,70
+Bengals,FS,#20,Mark Roman,61
+Bengals,HB,#28,Corey Dillon,93
+Bengals,HB,#36,Brandon Bennett,64
+Bengals,HB,#29,Curtis Keaton,61
+Bengals,HB,#32,Rudi Johnson,60
+Bengals,K,#5,Neil Rackers,34
+Bengals,LE,#96,Vaughn Booker,60
+Bengals,LE,#92,Eric Ogbogu,37
+Bengals,LG,#72,Matt O'Dwyer,77
+Bengals,LG,#79,Scott Rehberg,57
+Bengals,LOLB,#95,Steve Foley,69
+Bengals,LOLB,#98,Canute Curtis,50
+Bengals,LT,#73,Richmond Webb,82
+Bengals,LT,#76,Levi Jones,75
+Bengals,LT,#65,John Jackson,71
+Bengals,MLB,#56,Brian Simmons,88
+Bengals,MLB,#57,Adrian Ross,69
+Bengals,P,#8,Nick Harris,67
+Bengals,QB,#12,Gus Frerotte,69
+Bengals,QB,#3,Jon Kitna,66
+Bengals,QB,#11,Akili Smith,62
+Bengals,RE,#90,Justin Smith,89
+Bengals,RE,#55,Reinard Wilson,75
+Bengals,RE,#94,Jevon Langford,55
+Bengals,RG,#63,Mike Goff,57
+Bengals,RG,#77,Victor Leyva,49
+Bengals,ROLB,#51,Takeo Spikes,91
+Bengals,ROLB,#59,Armegis Spearman,63
+Bengals,RT,#71,Willie Anderson,88
+Bengals,RT,#75,Jamain Stephens,44
+Bengals,SS,#26,Cory Hall,61
+Bengals,SS,#33,JoJuan Armour,55
+Bengals,TE,#88,Sean Brewer,58
+Bengals,TE,#89,Matt Schobel,58
+Bengals,WR,#80,Peter Warrick,80
+Bengals,WR,#86,Darney Scott,75
+Bengals,WR,#85,Chad Johnson,71
+Bengals,WR,#81,Ron Dugans,62
+Bengals,WR,#83,Danny Farmer,62
+Bengals,WR,#84,T.J. Houshmandzadeh,58
+Patriots,C,#65,Damien Woody,92
+Patriots,C,#62,Grey Ruegamer,55
+Patriots,CB,#24,Ty Law,93
+Patriots,CB,#45,Otis Smith,77
+Patriots,CB,#29,Tom Knight,68
+Patriots,CB,#25,Leonard Myers,57
+Patriots,CB,#31,Ben Kelly,57
+Patriots,DT,#93,Richard Seymour,85
+Patriots,DT,#90,Steve Martin,70
+Patriots,DT,#92,David Nugent,53
+Patriots,DT,#71,Chris Sullivan,45
+Patriots,FB,#44,Marc Edwards,78
+Patriots,FB,#35,Patrick Pass,70
+Patriots,FS,#34,Tebucky Jones,74
+Patriots,FS,#22,Chris Hayes,48
+Patriots,HB,#32,Antowain Smith,82
+Patriots,HB,#39,Antoine Womack,69
+Patriots,HB,#21,J.R. Redmond,68
+Patriots,HB,#33,Kevin Faulk,65
+Patriots,K,#4,Adam Vinatieri,91
+Patriots,LE,#91,Bobby Hamilton,70
+Patriots,LE,#96,Rick Lyle,40
+Patriots,LG,#64,Mike Compton,80
+Patriots,LG,#68,Kenyatta Jones,62
+Patriots,LOLB,#52,Ted Johnson,73
+Patriots,LOLB,#56,Mike Vrabel,73
+Patriots,LT,#72,Matt Light,81
+Patriots,LT,#70,Adrian Klemm,77
+Patriots,MLB,#54,Tedy Bruschi,73
+Patriots,MLB,#58,Matt Chatham,59
+Patriots,P,#13,Ken Walter,89
+Patriots,QB,#12,Tom Brady,84
+Patriots,QB,#19,Damon Huard,65
+Patriots,QB,#6,Rohan Davey,60
+Patriots,RE,#55,Willie McGinest,83
+Patriots,RE,#98,Anthony Pleasant,79
+Patriots,RE,#97,Jarvis Green,51
+Patriots,RG,#66,Rich Tylski,77
+Patriots,RG,#63,Joseph Andruzzi,76
+Patriots,ROLB,#95,Roman Phifer,74
+Patriots,ROLB,#51,Ryan Phillips,63
+Patriots,RT,#77,Greg R-Randall,79
+Patriots,RT,#76,Grant Williams,68
+Patriots,SS,#36,Lawyer Milloy,96
+Patriots,SS,#30,Je'Rod Cherry,64
+Patriots,TE,#89,Daniel Graham,73
+Patriots,TE,#87,Cameron Cleeland,70
+Patriots,TE,#88,Christian Fauria,70
+Patriots,WR,#80,Troy Brown,89
+Patriots,WR,#86,David Patten,77
+Patriots,WR,#81,Donald Hayes,74
+Patriots,WR,#83,Deion Branch,62
+Patriots,WR,#84,Fred Coleman,60
+Jets,C,#68,Kevin Mawae,97
+Jets,C,#60,Dennis O'Sullivan,44
+Jets,CB,#29,Donnie Abraham,79
+Jets,CB,#21,Aaron Beasley,78
+Jets,CB,#24,Ray Mickens,70
+Jets,CB,#23,Jamie Henderson,61
+Jets,CB,#27,Tony Scott,40
+Jets,DT,#72,Jason Ferguson,72
+Jets,DT,#75,Larry Webster,66
+Jets,DT,#97,Riddick Parker,61
+Jets,DT,#93,James Reed,55
+Jets,DT,#98,Alan Harper,55
+Jets,FB,#20,Richie Anderson,87
+Jets,FB,#33,Jarald Sowell,37
+Jets,FS,#22,Damien Robinson,66
+Jets,FS,#38,Jon McGraw,64
+Jets,HB,#28,Curtis Martin,93
+Jets,HB,#34,LaMont Jordan,72
+Jets,HB,#26,Chad Morton,65
+Jets,HB,#32,Marlion Jackson,51
+Jets,K,#9,John Hall,74
+Jets,LE,#92,Shaun Ellis,81
+Jets,LE,#95,Steve White,70
+Jets,LG,#79,Dave Szott,82
+Jets,LG,#63,J.P. Machado,63
+Jets,LG,#78,Jonathan Goodwin,52
+Jets,LOLB,#57,Mo Lewis,88
+Jets,LOLB,#59,Jason Glenn,56
+Jets,LT,#69,Jason Fabini,90
+Jets,LT,#76,Jumbo Elliott,70
+Jets,MLB,#55,Marvin Jones,90
+Jets,MLB,#50,Kelvin Moses,44
+Jets,P,#1,Matt Turk,81
+Jets,QB,#16,Vinny Testaverde,76
+Jets,QB,#10,Chad Pennington,72
+Jets,QB,#11,Tory Woodbury,40
+Jets,RE,#94,John Abraham,91
+Jets,RE,#91,Bryan Thomas,71
+Jets,RG,#77,Randy Thomas,86
+Jets,ROLB,#56,Sam Cowart,88
+Jets,ROLB,#51,James Darling,55
+Jets,RT,#67,Kareem McKenzie,70
+Jets,RT,#65,Dan Goodspeed,45
+Jets,SS,#42,Sam Garnes,72
+Jets,SS,#25,Nick Ferguson,54
+Jets,TE,#88,Anthony Becht,80
+Jets,TE,#81,Chris Baker,58
+Jets,WR,#87,Laveranues Coles,80
+Jets,WR,#80,Wayne Chrebet,73
+Jets,WR,#83,Santana Moss,71
+Jets,WR,#82,Kevin Swayne,56
+Jets,WR,#15,Matt Farmer,55
+Jets,WR,#2,Corey Alston,52
+Dolphins,C,#61,Tim Ruddy,80
+Dolphins,C,#53,Seth McKinney,64
+Dolphins,CB,#29,Sam Madison,98
+Dolphins,CB,#23,Patrick Surtain,89
+Dolphins,CB,#21,Jamar Fletcher,76
+Dolphins,CB,#40,Ray Green,52
+Dolphins,CB,#24,Omare Lowe,48
+Dolphins,DT,#95,Tim Bowens,77
+Dolphins,DT,#64,Larry Chester,58
+Dolphins,DT,#94,Jermaine Haley,52
+Dolphins,DT,#97,Ernest Grant,48
+Dolphins,FB,#44,Rob Konrad,81
+Dolphins,FB,#33,Deon Dyer,71
+Dolphins,FS,#31,Brock Marion,89
+Dolphins,FS,#20,Shawn Wooden,71
+Dolphins,HB,#34,Ricky Williams,90
+Dolphins,HB,#28,Travis Minor,68
+Dolphins,HB,#47,Robert Edwards,64
+Dolphins,HB,#26,Leonard Henry,60
+Dolphins,K,#10,Olindo Mare,97
+Dolphins,LE,#90,Rob Burnett,74
+Dolphins,LE,#92,Daryl Gardener,74
+Dolphins,LG,#63,Mark Dixon,84
+Dolphins,LG,#62,Jim Bundren,47
+Dolphins,LOLB,#52,Morion Greenwood,63
+Dolphins,LOLB,#55,Twan Russell,45
+Dolphins,LT,#74,Brent Smith,66
+Dolphins,LT,#69,Marcus Spriggs,52
+Dolphins,MLB,#54,Zach Thomas,94
+Dolphins,MLB,#51,Tommy Hendricks,45
+Dolphins,P,#3,Mark Royals,72
+Dolphins,QB,#9,Jay Fiedler,77
+Dolphins,QB,#6,Ray Lucas,65
+Dolphins,QB,#7,Zak Kustok,51
+Dolphins,RE,#99,Jason Taylor,94
+Dolphins,RE,#76,David Bowens,41
+Dolphins,RG,#72,Leon Searcy,80
+Dolphins,RG,#75,Todd Perry,63
+Dolphins,ROLB,#59,Derrick Rodgers,66
+Dolphins,ROLB,#58,Scott Galyon,52
+Dolphins,RT,#71,Todd Wade,76
+Dolphins,RT,#66,Jamie Nails,59
+Dolphins,SS,#27,Arturo Freeman,61
+Dolphins,SS,#43,Scott McGarrahan,45
+Dolphins,TE,#84,Alonzo Mayes,61
+Dolphins,TE,#82,Jed Weaver,59
+Dolphins,TE,#89,Ed Perry,55
+Dolphins,WR,#84,Chris Chambers,83
+Dolphins,WR,#86,Oronde Gadsden,79
+Dolphins,WR,#80,James McKnight,72
+Dolphins,WR,#87,Dedric Ward,63
+Dolphins,WR,#88,Jeff Ogden,53
+Dolphins,WR,#83,Robert Baker,51
+Bills,C,#75,Jonas Jennings,78
+Bills,C,#63,Bill Conaty,67
+Bills,CB,#22,Nate Clements,84
+Bills,CB,#26,Antoine Winfield,84
+Bills,CB,#21,Chris Watson,60
+Bills,CB,#29,Jason Bostic,57
+Bills,CB,#30,Kevin Thomas,49
+Bills,DT,#93,Pat Williams,84
+Bills,DT,#98,Ron Edwards,60
+Bills,DT,#97,Lief Larsen,54
+Bills,DT,#92,Tyrone Robertson,53
+Bills,FB,#37,Larry Centers,93
+Bills,FB,#44,Jarrett Ferguson,57
+Bills,FS,#28,Travares Tillman,64
+Bills,FS,#42,Tony Driver,58
+Bills,HB,#25,Travis Henry,76
+Bills,HB,#38,Shawn Bryson,74
+Bills,HB,#33,Sammy Morris,71
+Bills,HB,#39,Richard Huntley,69
+Bills,HB,#31,Charlie Rogers,61
+Bills,K,#1,Mike Hollis,81
+Bills,LE,#77,Kendrick Office,68
+Bills,LE,#95,Bryce Fisher,64
+Bills,LE,#90,Ryan Denney,61
+Bills,LG,#79,Ruben Brown,96
+Bills,LG,#66,Robert Hunt,47
+Bills,LOLB,#53,Keith Newman,81
+Bills,LOLB,#51,Dashon Polk,54
+Bills,LT,#67,Trey Teague,69
+Bills,LT,#74,Marques Sullivan,60
+Bills,MLB,#59,London Fletcher,90
+Bills,MLB,#58,Brandon Spoon,61
+Bills,P,#8,Brian Moorman,54
+Bills,QB,#11,Drew Bledsoe,83
+Bills,QB,#10,Alex Van Pelt,66
+Bills,QB,#5,Travis Brown,42
+Bills,RE,#94,Aaron Schobel,69
+Bills,RE,#96,Eric Flowers,62
+Bills,RG,#60,Jerry Ostroski,74
+Bills,RG,#71,Corey Hulsey,54
+Bills,ROLB,#55,Eddie Robinson,73
+Bills,ROLB,#99,Fred Jones,35
+Bills,RT,#68,Mike Williams,80
+Bills,SS,#24,Billy Jenkins,60
+Bills,SS,#23,Pierson Prioleau,57
+Bills,TE,#85,Jay Riemersma,73
+Bills,TE,#83,Dave Moore,70
+Bills,TE,#88,Sheldon Jackson,55
+Bills,WR,#80,Eric Moulds,89
+Bills,WR,#81,Peerless Price,79
+Bills,WR,#82,Josh Reed,71
+Bills,WR,#84,Reggie Germany,61
+Bills,WR,#86,Jeremy McDaniel,59
+Titans,C,#74,Bruce Matthews,87
+Titans,C,#65,Jeff Smith,65
+Titans,CB,#21,Samari Rolle,87
+Titans,CB,#22,Andre Dyson,72
+Titans,CB,#30,Donald Mitchell,64
+Titans,CB,#37,Dainon Sidney,63
+Titans,CB,#24,Tony Beckham,57
+Titans,CB,#36,Mike Echols,56
+Titans,DT,#91,Albert Haynesworth,71
+Titans,DT,#92,Henry Ford,68
+Titans,DT,#78,John Thornton,66
+Titans,DT,#98,Robaire Smith,61
+Titans,DT,#95,Joe Salave'a,51
+Titans,FB,#34,Greg Comella,82
+Titans,FB,#20,Mike Green,32
+Titans,FS,#31,Lance Schulters,87
+Titans,FS,#32,Bobby Myers,57
+Titans,HB,#27,Eddie George,89
+Titans,HB,#42,Skip Hicks,70
+Titans,HB,#26,Robert Holcombe,67
+Titans,HB,#38,Dan Alexander,49
+Titans,K,#6,Joe Nedney,75
+Titans,LE,#93,Kevin Carter,81
+Titans,LE,#67,Juqua Thomas,54
+Titans,LG,#69,Zach Piller,63
+Titans,LG,#64,Gennaro DiNapoli,61
+Titans,LOLB,#53,Keith Bulluck,69
+Titans,LT,#72,Brad Hopkins,85
+Titans,LT,#76,Jason Mathews,59
+Titans,MLB,#56,Randall Godfrey,87
+Titans,MLB,#57,Frank Chamberlin,48
+Titans,P,#15,Craig Hentrich,83
+Titans,QB,#9,Steve McNair,83
+Titans,QB,#14,Neil O'Donnell,69
+Titans,QB,#12,Billy Volek,46
+Titans,RE,#90,Jevon Kearse,94
+Titans,RG,#75,Benji Olson,72
+Titans,ROLB,#54,Rocky Calmus,63
+Titans,ROLB,#59,Peter Sirmon,63
+Titans,RT,#71,Fred Miller,79
+Titans,RT,#70,Adam Haayer,42
+Titans,SS,#25,Tank Williams,65
+Titans,SS,#28,Aric Morris,65
+Titans,SS,#29,Joe Walker,48
+Titans,TE,#89,Frank Wycheck,89
+Titans,TE,#88,Erron Kinney,74
+Titans,TE,#84,Shad Meier,53
+Titans,WR,#85,Derrick Mason,82
+Titans,WR,#87,Kevin Dyson,78
+Titans,WR,#86,Justin McCareins,65
+Titans,WR,#83,Drew Bennett,63
+Titans,WR,#82,Eddie Berlin,52
+Titans,WR,#80,Chris Coleman,51
+Colts,C,#63,Jeff Saturday,73
+Colts,C,#65,Curt McGill,49
+Colts,CB,#21,Walt Harris,65
+Colts,CB,#27,David Macklin,63
+Colts,CB,#29,Joseph Jefferson,59
+Colts,CB,#26,Rodregis Brooks,52
+Colts,CB,#42,Raymond Walls,52
+Colts,CB,#25,Nick Harper,51
+Colts,DT,#62,Ellis Johnson,69
+Colts,DT,#76,Larry Tripplett,64
+Colts,DT,#96,Josh Williams,64
+Colts,DT,#97,James Cannida,60
+Colts,FB,#36,James Finn,50
+Colts,FS,#28,Idrees Bashir,71
+Colts,FS,#34,Jason Doering,41
+Colts,HB,#32,Edgerrin James,93
+Colts,HB,#33,Dominic Rhodes,78
+Colts,HB,#35,Benjamin Gay,61
+Colts,HB,#30,Shyrone Stith,54
+Colts,K,#13,Mike Vanderjagt,90
+Colts,LE,#91,Chuckie Nwokorie,57
+Colts,LE,#99,Brad Scioli,57
+Colts,LG,#66,Rick DeMulling,62
+Colts,LG,#75,Jim Pyne,62
+Colts,LOLB,#53,Marcus Washington,68
+Colts,LOLB,#51,Greg Favors,64
+Colts,LT,#78,Tarik Glenn,91
+Colts,MLB,#94,Rob Morris,75
+Colts,MLB,#98,Sam Sword,51
+Colts,P,#17,Hunter Smith,81
+Colts,QB,#21,Peyton Manning,92
+Colts,QB,#11,Brock Huard,61
+Colts,QB,#9,Greg Zolman,46
+Colts,QB,#16,Cory Sauter,37
+Colts,RE,#93,Dwight Freeney,76
+Colts,RE,#92,Chad Bratzke,69
+Colts,RG,#71,Ryan Diem,67
+Colts,ROLB,#52,Mike Peterson,80
+Colts,ROLB,#50,David Thornton,53
+Colts,RT,#73,Adam Meadows,90
+Colts,RT,#74,Waverly Jackson,76
+Colts,SS,#41,Cory Bird,64
+Colts,SS,#37,James Lewis,61
+Colts,TE,#81,Marcus Polland,87
+Colts,TE,#49,Joe Davenport,62
+Colts,TE,#82,Jermaine Wiggins,62
+Colts,WR,#88,Marvin Harrison,97
+Colts,WR,#83,Qadry Ismail,81
+Colts,WR,#87,Reggie Wayne,76
+Colts,WR,#85,Troy Walters,59
+Colts,WR,#84,Drew Haddad,43
+Jaguars,C,#60,Kevin Long,71
+Jaguars,C,#66,John Wade,68
+Jaguars,CB,#25,Fernando Bryant,72
+Jaguars,CB,#29,Jason Craft,63
+Jaguars,CB,#41,Kiwaukee Thomas,60
+Jaguars,CB,#27,Damen Wheeler,59
+Jaguars,DT,#98,John Henderson,74
+Jaguars,DT,#99,Marcus Stroud,73
+Jaguars,DT,#94,Larry Smith,69
+Jaguars,DT,#96,Tim Marabito,62
+Jaguars,FB,#33,Detron Smith,66
+Jaguars,FB,#31,Patrick Washington,63
+Jaguars,FS,#32,Marion McCree,66
+Jaguars,FS,#26,Ainsley Battles,65
+Jaguars,HB,#28,Fred Taylor,87
+Jaguars,HB,#34,Stacey Mack,73
+Jaguars,HB,#35,Elvis Joseph,64
+Jaguars,K,#19,Jaret Holmes,56
+Jaguars,LE,#97,Marco Coleman,77
+Jaguars,LE,#93,Stalin Colinet,53
+Jaguars,LE,#92,Rob Meier,50
+Jaguars,LG,#63,Brad Meester,70
+Jaguars,LG,#71,Raleigh Roundtree,59
+Jaguars,LG,#64,Aaron Koch,46
+Jaguars,LOLB,#55,Danny Clark,53
+Jaguars,LOLB,#50,Joe Wesley,52
+Jaguars,LOLB,#51,Akin Ayodele,51
+Jaguars,LT,#77,Zach Wiegert,70
+Jaguars,LT,#72,Mike Pearson,67
+Jaguars,LT,#79,Daryl Terrell,45
+Jaguars,MLB,#58,Wali Rainer,74
+Jaguars,MLB,#57,Joe Tuipala,44
+Jaguars,P,#2,Chris Hanson,83
+Jaguars,QB,#8,Mark Brunell,86
+Jaguars,QB,#9,David Garrard,59
+Jaguars,QB,#10,Roderick Robinson,39
+Jaguars,RE,#90,Tony Brackens,84
+Jaguars,RE,#95,Paul Spicer,59
+Jaguars,RG,#65,Chris Naeole,79
+Jaguars,ROLB,#53,T.J. Slaughter,73
+Jaguars,ROLB,#52,Eric Westmoreland,58
+Jaguars,ROLB,#59,Edward Thomas,50
+Jaguars,RT,#74,Maurice Williams,75
+Jaguars,RT,#78,Todd Fordham,55
+Jaguars,SS,#20,Donovan Darius,77
+Jaguars,SS,#42,James Boyd,63
+Jaguars,TE,#80,Kyle Brady,71
+Jaguars,TE,#83,Pete Mitchell,66
+Jaguars,WR,#82,Jimmy Smith,93
+Jaguars,WR,#81,Bobby Shaw,71
+Jaguars,WR,#84,Patrick Johnson,71
+Jaguars,WR,#85,Damon Gibson,59
+Jaguars,WR,#86,Micah Ross,52
+Texans,C,#76,Steve McKinney,85
+Texans,C,#67,Ryan Schau,55
+Texans,CB,#31,Aaron Glenn,82
+Texans,CB,#42,Marcus Coleman,81
+Texans,CB,#29,Javoby Shepherd,54
+Texans,CB,#30,Jason Simmons,53
+Texans,CB,#21,Anthony Malbrough,48
+Texans,DT,#91,Seth Payne,68
+Texans,DT,#63,Charles Hall,56
+Texans,DT,#95,Jerry DeLoach,39
+Texans,FB,#46,Clif Groce,65
+Texans,FB,#47,Jarrod Baxter,63
+Texans,FS,#23,Kevin L. Williams,59
+Texans,FS,#36,Chris Carter,57
+Texans,HB,#20,James Allen,71
+Texans,HB,#32,Jonathan Wells,67
+Texans,HB,#34,Travis Prentice,63
+Texans,K,#3,Kris Brown,73
+Texans,LE,#72,Jabari Issa,54
+Texans,LE,#92,Corey Sears,49
+Texans,LG,#69,Chester Pitts,65
+Texans,LG,#68,Jeremy McKinney,61
+Texans,LOLB,#52,Kailee Wong,74
+Texans,LOLB,#98,Jeff Posey,57
+Texans,LT,#71,Tony Boselli,94
+Texans,LT,#75,Jimmy Herndon,54
+Texans,MLB,#55,Jamie Sharper,87
+Texans,MLB,#56,Jay Foreman,65
+Texans,MLB,#50,Allen Alridge,62
+Texans,P,#5,John Baker,51
+Texans,QB,#8,David Carr,76
+Texans,QB,#10,Kent Graham,63
+Texans,QB,#4,Mike Quinn,62
+Texans,RE,#96,Gary Walker,80
+Texans,RE,#90,Dorian Boose,44
+Texans,RG,#70,DeMingo Graham,67
+Texans,RG,#61,Fred Weary,66
+Texans,ROLB,#59,Greg Jones,57
+Texans,RT,#74,Ryan Young,81
+Texans,RT,#64,Max Lane,67
+Texans,SS,#41,Ramon Walker,57
+Texans,SS,#26,Matt Stevens,55
+Texans,SS,#35,Leomont Evans,54
+Texans,TE,#82,Billy Miller,63
+Texans,TE,#83,Rod Rutledge,59
+Texans,TE,#80,Kaseem Sinceno,48
+Texans,WR,#12,Jabar Gaffney,73
+Texans,WR,#85,Corey Bradford,73
+Texans,WR,#84,Jermaine Lewis,68
+Texans,WR,#81,Tony Simmons,59
+Texans,WR,#89,Avion Black,59
+Texans,WR,#87,Trevor Insley,56
+Raiders,C,#63,Barrett Robbins,87
+Raiders,C,#62,Adam Treu,70
+Raiders,CB,#24,Charles Woodson,96
+Raiders,CB,#31,Phillip Buchanon,74
+Raiders,CB,#22,Terrance Shaw,67
+Raiders,CB,#20,Tory James,66
+Raiders,DT,#97,John Parrella,84
+Raiders,DT,#57,Roderick Coleman,73
+Raiders,DT,#98,Michael Mohring,45
+Raiders,FB,#40,Jon Ritchie,82
+Raiders,FB,#32,Zack Crockett,77
+Raiders,FS,#30,Rod Woodson,92
+Raiders,FS,#33,Anthony Dorsett,72
+Raiders,FS,#26,Derrick Gibson,70
+Raiders,HB,#25,Charlie Garner,83
+Raiders,HB,#47,Tyrone Wheatley,72
+Raiders,HB,#42,Terry Kirby,67
+Raiders,HB,#28,Randy Jordan,51
+Raiders,K,#11,Sebastian Janikowski,92
+Raiders,LE,#94,Tony Bryant,76
+Raiders,LE,#93,Trace Armstrong,74
+Raiders,LG,#74,Matt Stinchcomb,71
+Raiders,LG,#78,Frank Middleton,71
+Raiders,LOLB,#53,Bill Romanowski,78
+Raiders,LOLB,#52,Mike A. Jones,72
+Raiders,LOLB,#56,Travian Smith,62
+Raiders,LT,#65,Barry Sims,82
+Raiders,LT,#70,Brad Badger,69
+Raiders,MLB,#54,Greg Biekert,84
+Raiders,MLB,#58,Napoleon Harris,70
+Raiders,P,#9,Shane Lechler,88
+Raiders,QB,#12,Rich Gannon,91
+Raiders,QB,#8,Marques Tuiasosopo,64
+Raiders,QB,#14,Bobby Hoying,58
+Raiders,RE,#91,Regan Upshaw,69
+Raiders,RE,#95,DeLawrence Grant,62
+Raiders,RE,#99,Josh Taves,56
+Raiders,RG,#79,Mo Collins,74
+Raiders,RG,#73,Darryl Ashmore,59
+Raiders,ROLB,#51,Gerald Dixon,63
+Raiders,ROLB,#50,Eric Barton,62
+Raiders,RT,#72,Lincoln Kennedy,95
+Raiders,RT,#66,Langston Walker,64
+Raiders,SS,#44,Johnnie Harris,68
+Raiders,TE,#86,Roland Williams,67
+Raiders,TE,#88,Doug Jolley,64
+Raiders,TE,#87,Jeremy Brigham,55
+Raiders,WR,#81,Tim Brown,90
+Raiders,WR,#80,Jerry Rice,84
+Raiders,WR,#84,Jerry Porter,73
+Raiders,WR,#83,Marcus Knight,64
+Raiders,WR,#85,Reggie Barlow,60
+Raiders,WR,#82,James Jett,53
+Broncos,C,#66,Tom Nalen,95
+Broncos,C,#50,Ben Hamilton,63
+Broncos,CB,#24,Deltha O'Neal,85
+Broncos,CB,#25,Denard Walker,80
+Broncos,CB,#23,Willie Middlebrooks,69
+Broncos,CB,#27,Tyrone Poole,68
+Broncos,CB,#33,Jimmy Spencer,59
+Broncos,DT,#91,Chester McGlockton,74
+Broncos,DT,#94,Lionel Dalton,65
+Broncos,DT,#90,Jerry Johnson,61
+Broncos,DT,#96,Dorsett Davis,61
+Broncos,DT,#99,Montae Reagor,49
+Broncos,FB,#38,Mike Anderson,76
+Broncos,FB,#37,Tony Carter,70
+Broncos,FS,#43,Izell Reese,64
+Broncos,HB,#30,Terrell Davis,85
+Broncos,HB,#22,Olandis Gary,75
+Broncos,HB,#26,Clinton Portis,73
+Broncos,HB,#46,KaRon Coleman,55
+Broncos,K,#1,Jason Elam,95
+Broncos,LE,#93,Trevor Pryce,87
+Broncos,LE,#68,Paul Toviessi,62
+Broncos,LG,#64,Lennie Friedman,63
+Broncos,LG,#79,Steve Herndon,56
+Broncos,LOLB,#51,John Mobley,82
+Broncos,LT,#75,Blake Brockermeyer,79
+Broncos,LT,#78,Matt Lepsis,76
+Broncos,MLB,#56,Al Wilson,81
+Broncos,MLB,#55,Keith Burns,45
+Broncos,P,#16,Tom Rouen,88
+Broncos,QB,#14,Brian Griese,80
+Broncos,QB,#11,Steve Beuerlein,70
+Broncos,QB,#17,Jarious Jackson,43
+Broncos,RE,#98,Reggie Hayward,69
+Broncos,RE,#95,Kavika Pittman,62
+Broncos,RG,#62,Dan Neil,95
+Broncos,ROLB,#52,Ian Gold,67
+Broncos,ROLB,#58,Terry Killens,51
+Broncos,RT,#74,Ephraim Salaam,71
+Broncos,RT,#65,Cooper Carlisle,57
+Broncos,RT,#77,Barrett Brooks,57
+Broncos,SS,#28,Kenoy Kennedy,64
+Broncos,SS,#48,George Coghill,56
+Broncos,TE,#84,Shannon Sharpe,92
+Broncos,TE,#88,Desmond Clark,80
+Broncos,TE,#89,Dwayne Carswell,80
+Broncos,WR,#80,Rod Smith,95
+Broncos,WR,#87,Ed McCaffrey,84
+Broncos,WR,#10,Ashley Lelie,73
+Broncos,WR,#85,Rob Moore,71
+Broncos,WR,#82,Kevin Kasper,69
+Broncos,WR,#83,Scottie Montgomery,57
+Broncos,WR,#81,Chris Cole,54
+Chargers,C,#66,Cory Raymer,76
+Chargers,C,#61,Michael Keathley,57
+Chargers,CB,#47,Ryan McNeil,83
+Chargers,CB,#23,Quentin Jammer,78
+Chargers,CB,#25,Alex Molden,62
+Chargers,CB,#27,Tay Cody,62
+Chargers,CB,#22,Lloyd Harrison,55
+Chargers,CB,#33,Davis Sanchez,50
+Chargers,DT,#76,Jamal Williams,83
+Chargers,DT,#92,Jason Fisk,73
+Chargers,DT,#96,Leonardo Carson,52
+Chargers,FB,#44,Fred McCrary,72
+Chargers,FS,#45,Rogers Beckett,72
+Chargers,FS,#31,Jason Perry,41
+Chargers,HB,#21,LaDainian Tomlinson,86
+Chargers,HB,#28,Ronney Jenkins,58
+Chargers,HB,#41,Terrell Fletcher,58
+Chargers,K,#5,Wade Richey,73
+Chargers,K,#8,Steve Christie,73
+Chargers,LE,#75,Marcellus Wiley,93
+Chargers,LE,#95,Al Fontenot,55
+Chargers,LG,#64,Bob Hallen,61
+Chargers,LG,#68,Elliott Silvers,41
+Chargers,LOLB,#54,Donnie Edwards,88
+Chargers,LT,#77,Damion McIntosh,65
+Chargers,LT,#72,Matt Anderle,58
+Chargers,MLB,#56,Orlando Ruff,64
+Chargers,MLB,#52,Carios Polk,62
+Chargers,P,#2,Darren Bennett,95
+Chargers,QB,#7,Doug Flutie,71
+Chargers,QB,#9,Drew Brees,71
+Chargers,QB,#15,Dave Dickinson,45
+Chargers,RE,#99,Raylee Johnson,77
+Chargers,RE,#90,Adrian Dingle,54
+Chargers,RG,#71,Toniu Fonoti,73
+Chargers,RG,#69,Edward Ellis,59
+Chargers,ROLB,#55,Junior Seau,98
+Chargers,ROLB,#57,Zeke Moreno,51
+Chargers,RT,#70,Vaughn Parker,77
+Chargers,RT,#78,Sammy Williams,50
+Chargers,SS,#37,Rodney Harrison,97
+Chargers,SS,#30,Robert Carswell,52
+Chargers,TE,#81,Stephen Alexander,67
+Chargers,TE,#83,Steve Heiden,58
+Chargers,TE,#88,Justin Peelle,54
+Chargers,WR,#80,Curtis Conway,80
+Chargers,WR,#22,Reche Caldwell,71
+Chargers,WR,#85,Tim Dwight,69
+Chargers,WR,#86,Pat Batteaux,61
+Chargers,WR,#82,Trevor Gaylor,54
+Chargers,WR,#87,Tamarick Vanover,52
+Chiefs,C,#62,Casey Wiegmann,78
+Chiefs,C,#64,Jason Andersen,43
+Chiefs,CB,#44,Eric Warfield,72
+Chiefs,CB,#39,Ray Crockett,68
+Chiefs,CB,#24,William Bartee,65
+Chiefs,CB,#26,Taje Allen,52
+Chiefs,CB,#40,Corey Harris,51
+Chiefs,DT,#90,Ryan Sims,75
+Chiefs,DT,#71,Eddie Freeman,66
+Chiefs,DT,#95,Derrick Ransom,66
+Chiefs,DT,#79,Eric Downing,60
+Chiefs,DT,#94,Nate Hobgood-Chitt,44
+Chiefs,FB,#49,Tony Richardson,90
+Chiefs,FS,#21,Jerome Woods,65
+Chiefs,HB,#31,Priest Holmes,88
+Chiefs,HB,#23,Derrick Blaylock,55
+Chiefs,HB,#34,Mike Cloud,54
+Chiefs,K,#8,Morten Andersen,81
+Chiefs,LE,#98,Eric Hicks,84
+Chiefs,LE,#93,John Browning,43
+Chiefs,LG,#54,Brian Waters,77
+Chiefs,LG,#60,Donald Willis,75
+Chiefs,LOLB,#56,Lew Bush,66
+Chiefs,LOLB,#51,Glenn Cadrez,64
+Chiefs,LOLB,#59,Scott Fujita,61
+Chiefs,LT,#77,Willie Roaf,90
+Chiefs,LT,#73,Willie Jones,50
+Chiefs,MLB,#53,Marvcus Patton,81
+Chiefs,MLB,#91,Richard Jordan,42
+Chiefs,MLB,#96,Monty Beisel,41
+Chiefs,P,#4,Dan Stryzinski,80
+Chiefs,QB,#10,Trent Green,78
+Chiefs,QB,#15,Todd Collins,57
+Chiefs,QB,#12,Jonathan Quinn,57
+Chiefs,RE,#99,Duane Clemons,70
+Chiefs,RE,#97,Rich Owens,61
+Chiefs,RG,#68,Will Shields,97
+Chiefs,RG,#72,Darnell Alford,56
+Chiefs,ROLB,#50,Larry Atkins,66
+Chiefs,ROLB,#57,Mike Maslowski,66
+Chiefs,RT,#76,John Tait,86
+Chiefs,RT,#70,Marcus Spears,72
+Chiefs,SS,#25,Greg Wesley,71
+Chiefs,SS,#29,Jason Belser,63
+Chiefs,TE,#88,Tony Gonzalez,97
+Chiefs,TE,#89,Jason Dunn,57
+Chiefs,WR,#80,Johnny Morton,84
+Chiefs,WR,#84,Sylvester Morris,71
+Chiefs,WR,#81,Snoop Minnis,70
+Chiefs,WR,#87,Eddie Kennison,65
+Chiefs,WR,#82,Larry Parker,62
+Chiefs,WR,#20,Marc Boerigter,58
+Chiefs,WR,#20,Dante Hall,54
+Packers,C,#58,Mike Flanagan,73
+Packers,C,#52,Frank Winters,72
+Packers,CB,#34,Mike McKenzie,87
+Packers,CB,#37,Tyrone Williams,75
+Packers,CB,#21,Bhawoh Jue,63
+Packers,CB,#27,Tod McBride,58
+Packers,DT,#97,Cletidus Hunt,66
+Packers,DT,#93,Gilbert Brown,64
+Packers,DT,#96,Steve Warren,56
+Packers,DT,#74,Aaron Kampman,50
+Packers,DT,#95,Rod Walker,50
+Packers,FB,#33,Willie Henderson,84
+Packers,FB,#44,Najeh Davenport,70
+Packers,FS,#36,LeRoy Butler,81
+Packers,FS,#24,Antuan Edwards,74
+Packers,HB,#30,Ahman Green,92
+Packers,HB,#35,Ki-Jana Carter,68
+Packers,HB,#39,Jason Brookins,64
+Packers,HB,#29,Herbet Goodman,62
+Packers,HB,#32,Rondell Mealey,62
+Packers,K,#8,Ryan Longwell,88
+Packers,LE,#90,Vonnie Holliday,81
+Packers,LE,#98,Billy Lyon,42
+Packers,LG,#68,Mike Wahle,73
+Packers,LG,#64,Bill Ferrario,48
+Packers,LOLB,#59,Na'il Diggs,73
+Packers,LT,#76,Chad Clifton,75
+Packers,MLB,#56,Hardy Nickerson,75
+Packers,MLB,#51,Torrance Marshall,65
+Packers,MLB,#57,Chris Gizzi,39
+Packers,P,#9,Josh Bidwell,52
+Packers,QB,#4,Brett Favre,97
+Packers,QB,#19,Doug Pederson,60
+Packers,QB,#12,Craig Nall,52
+Packers,RE,#91,Joe Johnson,92
+Packers,RE,#94,Kabeer Gbaja-Biamila,78
+Packers,RE,#99,Jamal Reynolds,70
+Packers,RG,#62,Marco Rivera,82
+Packers,ROLB,#54,Nate Wayne,75
+Packers,ROLB,#55,Robert Holmberg,64
+Packers,RT,#65,Mark Tauscher,76
+Packers,RT,#72,Earl Dotson,71
+Packers,SS,#42,Darren Sharper,94
+Packers,SS,#20,Marques Anderson,56
+Packers,TE,#88,Bubba Franks,83
+Packers,TE,#81,Tyrone Davis,66
+Packers,TE,#87,David Martin,66
+Packers,WR,#83,Terry Glenn,79
+Packers,WR,#84,Javon Walker,69
+Packers,WR,#89,Robert Ferguson,69
+Packers,WR,#80,Donald Driver,67
+Packers,WR,#82,Charles Lee,67
+Packers,WR,#16,Windrell Hayes,52
+Bears,C,#57,Olin Kreutz,94
+Bears,C,#73,Kevin Dogins,40
+Bears,CB,#21,R.W. McQuarters,80
+Bears,CB,#23,Jerry Azumah,71
+Bears,CB,#20,Roosevelt Williams,57
+Bears,CB,#26,Todd McMillon,57
+Bears,CB,#39,Reggie Austin,54
+Bears,DT,#92,Ted Washington,88
+Bears,DT,#94,Keith Traylor,84
+Bears,DT,#70,Alfonso Boone,71
+Bears,DT,#72,Jason Wiltz,49
+Bears,FB,#31,Daimon Shelton,77
+Bears,FB,#36,Stanley Pritchett,75
+Bears,FS,#43,Michael Green,67
+Bears,FS,#33,Larry Whigham,62
+Bears,HB,#35,Anthony Thomas,84
+Bears,HB,#29,Adrian Peterson,64
+Bears,HB,#32,Leon Johnson,64
+Bears,HB,#27,Rabih Abdullah,55
+Bears,K,#2,Paul Edinger,86
+Bears,LE,#90,Keith McKenzie,75
+Bears,LE,#98,Bryan Robinson,73
+Bears,LG,#64,Rex Tucker,79
+Bears,LG,#60,Terrence Metcalf,68
+Bears,LOLB,#59,Rosevelt Colvin,85
+Bears,LT,#74,Bernard Robertson,69
+Bears,LT,#75,Marc Colombo,69
+Bears,MLB,#54,Brian Urlacher,96
+Bears,MLB,#52,Bobbie Howard,34
+Bears,P,#4,Brad Maynard,91
+Bears,QB,#15,Jim Miller,74
+Bears,QB,#12,Chris Chandler,73
+Bears,QB,#10,Henry Burris,45
+Bears,RE,#93,Phillip Daniels,76
+Bears,RE,#96,Alex Brown,69
+Bears,RE,#67,Karon Riley,59
+Bears,RG,#58,Chris Villarrial,81
+Bears,RG,#69,Mike Gandy,72
+Bears,ROLB,#53,Warrick Holdman,81
+Bears,ROLB,#55,Mike Caldwell,71
+Bears,RT,#71,James Williams,89
+Bears,RT,#65,Patrick Mannelly,51
+Bears,SS,#30,Mike Brown,89
+Bears,SS,#44,Damon Moore,67
+Bears,SS,#22,Than Merril,47
+Bears,TE,#84,Fred Baxter,61
+Bears,TE,#49,Bryan Fletcher,51
+Bears,TE,#85,Luther Broughton,45
+Bears,WR,#86,Marty Booker,83
+Bears,WR,#88,Marcus Robinson,82
+Bears,WR,#83,David Terrell,79
+Bears,WR,#80,Dez White,70
+Bears,WR,#81,Ahmed Merritt,61
+Vikings,C,#78,Matt Birk,93
+Vikings,C,#69,Mike Malano,48
+Vikings,CB,#21,Corey Chavous,72
+Vikings,CB,#25,Eric Kelly,62
+Vikings,CB,#28,Robert Tate,61
+Vikings,CB,#20,Kenny Wright,60
+Vikings,CB,#41,Carey Scott,37
+Vikings,DT,#99,Chris Hovan,90
+Vikings,DT,#98,Fred Robbins,60
+Vikings,DT,#91,Willie Howard,55
+Vikings,DT,#95,Shawn Worthen,53
+Vikings,FB,#33,Harold Morrow,68
+Vikings,FS,#26,Ronnie Bradford,79
+Vikings,FS,#24,Willie Offord,63
+Vikings,HB,#23,Michael Bennett,72
+Vikings,HB,#34,Doug Chapman,64
+Vikings,HB,#30,Moe Williams,63
+Vikings,K,#9,Doug Brien,70
+Vikings,LE,#79,Kenny Mixon,73
+Vikings,LE,#51,Lance Johnstone,64
+Vikings,LE,#67,Chuck Wiley,51
+Vikings,LG,#76,Chris Liwienski,74
+Vikings,LG,#63,Corbin Lacina,55
+Vikings,LOLB,#50,Patrick Chukwurah,61
+Vikings,LOLB,#52,Andre O'Neal,59
+Vikings,LOLB,#54,Antonio Wilson,47
+Vikings,LT,#74,Bryant McKinnie,79
+Vikings,LT,#62,Everett Lindsay,57
+Vikings,MLB,#59,Henri Crockett,68
+Vikings,MLB,#96,Isaac Keys,46
+Vikings,P,#5,Kyle Richardson,78
+Vikings,QB,#11,Daunte Culpepper,89
+Vikings,QB,#8,Todd Bouman,61
+Vikings,QB,#13,Spergon Wynn,48
+Vikings,RE,#94,Lorenzo Bromell,76
+Vikings,RE,#97,Talance Sawyer,64
+Vikings,RG,#71,David Dixon,65
+Vikings,RG,#60,Cory Withrow,51
+Vikings,ROLB,#57,Raonall Smith,65
+Vikings,ROLB,#53,Lemanski Hall,59
+Vikings,ROLB,#56,Jim Nelson,59
+Vikings,RT,#61,Lewis Kelly,52
+Vikings,RT,#73,Brian Crawford,38
+Vikings,SS,#37,Tyrone Carter,61
+Vikings,TE,#87,Byron Chamberlain,80
+Vikings,TE,#40,Jim Kleinsasser,74
+Vikings,TE,#83,Hunter Goodwin,63
+Vikings,WR,#84,Randy Moss,98
+Vikings,WR,#80,Derrick Alexander,78
+Vikings,WR,#82,D'Wayne Bates,71
+Vikings,WR,#86,Sean Dawkins,66
+Vikings,WR,#81,Chris Walsh,63
+Vikings,WR,#15,Kenny Clark,57
+Lions,C,#79,Eric Beverly,75
+Lions,C,#51,Dominic Raiola,69
+Lions,CB,#24,Todd Lyght,73
+Lions,CB,#23,Terry Fair,69
+Lions,CB,#35,Andre Goodman,59
+Lions,CB,#27,Jimmy Wyrick,54
+Lions,CB,#42,Chidi Iwuoma,39
+Lions,DT,#94,Luther Elliss,84
+Lions,DT,#92,Shaun Rogers,79
+Lions,DT,#93,Kelvin Pritchett,60
+Lions,DT,#67,Travis Kirschke,43
+Lions,FB,#30,Cory Schlesinger,85
+Lions,FB,#26,Brock Olivo,50
+Lions,FS,#45,Brian Walker,70
+Lions,FS,#39,Lamar Campbell,44
+Lions,HB,#34,James Stewart,78
+Lions,HB,#21,Lamont Warren,61
+Lions,HB,#33,Luke Staley,60
+Lions,K,#4,Jason Hanson,84
+Lions,LE,#91,Robert Porcher,91
+Lions,LE,#63,James Hall,64
+Lions,LE,#90,Johnathon Taylor,58
+Lions,LG,#62,Tony Semple,65
+Lions,LG,#65,Kerlin Blaise,55
+Lions,LOLB,#59,Jeff Gooch,60
+Lions,LOLB,#58,Clint Kriewaldt,52
+Lions,LT,#76,Jeff Backus,76
+Lions,MLB,#50,Chris Claiborne,76
+Lions,MLB,#53,Wayne Rogers,46
+Lions,P,#19,John Jett,80
+Lions,QB,#3,Joey Harrington,73
+Lions,QB,#8,Mike McMahon,72
+Lions,QB,#11,Ty Detmer,63
+Lions,RE,#98,Kalimba Edwards,70
+Lions,RE,#95,Jared DeVries,66
+Lions,RG,#66,Brendan Stai,74
+Lions,ROLB,#54,Barrett Green,68
+Lions,ROLB,#99,Brian Williams,56
+Lions,ROLB,#97,Chaz Murphy,47
+Lions,RT,#73,Stockar McDougie,72
+Lions,RT,#75,Matt Joyce,68
+Lions,RT,#72,Victor Rogers,61
+Lions,SS,#25,Corey Harris,73
+Lions,SS,#28,Bracey Walker,47
+Lions,TE,#85,Mikhael Ricks,55
+Lions,TE,#83,John Owens,50
+Lions,WR,#81,Az-Zahir Hakim,80
+Lions,WR,#82,Germane Crowell,80
+Lions,WR,#84,Bill Schroeder,78
+Lions,WR,#80,Desmond Howard,65
+Lions,WR,#87,Larry Foster,59
+Lions,WR,#88,Scotty Anderson,59
+Eagles,C,#63,Hank Fraley,62
+Eagles,C,#62,Scott Peters,55
+Eagles,CB,#23,Troy Vincent,92
+Eagles,CB,#21,Bobby Taylor,90
+Eagles,CB,#31,Al Harris,72
+Eagles,CB,#26,Lito Sheppard,69
+Eagles,CB,#39,Sheldon Brown,63
+Eagles,DT,#90,Corey Simon,92
+Eagles,DT,#78,Hollis Thomas,68
+Eagles,DT,#97,Darwin Walker,61
+Eagles,DT,#96,Paul Grasmanis,52
+Eagles,FB,#38,Cecil Martin,84
+Eagles,FS,#20,Brian Dawkins,98
+Eagles,FS,#27,Julian Jones,43
+Eagles,HB,#22,Duce Staley,84
+Eagles,HB,#28,Correll Buckhalter,74
+Eagles,HB,#30,Brian Mitchell,68
+Eagles,HB,#36,Brian Westbrook,64
+Eagles,HB,#25,Rod Smart,62
+Eagles,K,#2,David Akers,92
+Eagles,LE,#98,Brandon Whiting,71
+Eagles,LE,#59,Derrick Burgess,69
+Eagles,LG,#76,John Welbourn,71
+Eagles,LG,#74,Doug Brzezinski,69
+Eagles,LOLB,#51,Carlos Emmons,81
+Eagles,LOLB,#95,Justin Ena,52
+Eagles,LT,#72,Tra Thomas,92
+Eagles,LT,#64,Steve Edwards,53
+Eagles,MLB,#52,Barry Gardner,71
+Eagles,MLB,#55,Quinton Caver,68
+Eagles,P,#7,Sean Landeta,82
+Eagles,QB,#5,Donovan McNabb,92
+Eagles,QB,#12,A.J. Feeley,53
+Eagles,QB,#10,Koy Detmer,52
+Eagles,RE,#53,Hugh Douglas,94
+Eagles,RE,#94,Ndukwe Kalu,70
+Eagles,RG,#71,Jermane Mayberry,67
+Eagles,RG,#66,Bobbie Williams,50
+Eagles,ROLB,#56,Shawn Barber,69
+Eagles,ROLB,#58,Ike Reese,60
+Eagles,RT,#69,John Runyan,87
+Eagles,SS,#24,Blaine Bishop,81
+Eagles,SS,#32,Michael Lewis,70
+Eagles,SS,#42,Rashard Cook,67
+Eagles,TE,#89,Chad Lewis,85
+Eagles,TE,#48,Tony Stewart,62
+Eagles,TE,#83,Jeff Thomason,60
+Eagles,WR,#80,James Thrash,83
+Eagles,WR,#84,Freddie Mitchell,79
+Eagles,WR,#87,Todd Pinkston,79
+Eagles,WR,#85,Na Brown,60
+Eagles,WR,#17,Freddie Milons,58
+Eagles,WR,#82,Dameane Douglas,58
+Redskins,C,#50,Larry Moore,64
+Redskins,C,#77,Ethan Albright,38
+Redskins,CB,#24,Champ Bailey,96
+Redskins,CB,#28,Darrell Green,81
+Redskins,CB,#21,Fred Smoot,79
+Redskins,CB,#35,Rashard Bauman,58
+Redskins,CB,#22,Kato Serwanga,57
+Redskins,DT,#95,Dan Wilkinson,90
+Redskins,DT,#72,Santana Dotson,68
+Redskins,DT,#91,Delbert Cowsette,44
+Redskins,FB,#47,Bryan Johnson,59
+Redskins,FB,#40,Rock Cartwright,57
+Redskins,FS,#31,David Terrell,62
+Redskins,FS,#34,Andre Lott,57
+Redskins,HB,#48,Stephen Davis,87
+Redskins,HB,#46,Ladell Betts,66
+Redskins,HB,#32,Kenny Watson,46
+Redskins,K,#1,Brett Conway,70
+Redskins,LE,#97,Renaldo Wynn,71
+Redskins,LE,#71,Carl Powell,46
+Redskins,LG,#75,Kipp Vickers,64
+Redskins,LG,#79,David Loverne,61
+Redskins,LOLB,#57,LaVar Arrington,92
+Redskins,LOLB,#53,Eddie Mason,49
+Redskins,LT,#60,Chris Samuels,90
+Redskins,LT,#73,Terrance Simmons,56
+Redskins,MLB,#54,Jeremiah Trotter,92
+Redskins,MLB,#55,Kevin Mitchell,71
+Redskins,P,#4,Bryan Baker,78
+Redskins,QB,#6,Shane Matthews,69
+Redskins,QB,#23,Sage Rosenfels,64
+Redskins,QB,#11,Patrick Ramsey,63
+Redskins,QB,#17,Danny Wuerffel,60
+Redskins,RE,#78,Bruce Smith,78
+Redskins,RG,#61,Rod Jones,83
+Redskins,RG,#74,Alex Sulfsted,46
+Redskins,ROLB,#98,Jessie Armstead,86
+Redskins,ROLB,#58,Antonio Pierce,55
+Redskins,RT,#76,Jon Jansen,89
+Redskins,SS,#29,Sam Shade,79
+Redskins,SS,#26,Ifeanyi Ohalete,57
+Redskins,TE,#89,Zeron Flemister,57
+Redskins,TE,#86,Walter Rasby,56
+Redskins,TE,#45,Robert Royal,49
+Redskins,WR,#87,Rod Gardner,79
+Redskins,WR,#80,Jacquez Green,73
+Redskins,WR,#81,Kevin Lockett,71
+Redskins,WR,#84,Reidel Anthony,65
+Redskins,WR,#82,Cliff Russell,63
+Redskins,WR,#88,Derrius Thompson,62
+Redskins,WR,#85,Darnerian McCants,58
+Redskins,WR,#19,Chris Doering,52
+Cowboys,C,#65,Andre Gurode,71
+Cowboys,C,#68,Matt Lehr,70
+Cowboys,CB,#30,Bryant Westbrook,75
+Cowboys,CB,#38,Duane Hawthorne,66
+Cowboys,CB,#27,Mario Edwards,64
+Cowboys,CB,#20,Derek Ross,59
+Cowboys,CB,#23,Dwayne Goodrich,53
+Cowboys,CB,#41,Oatrick Dennis,52
+Cowboys,DT,#97,La'Roi Glover,91
+Cowboys,DT,#75,Brandon Noble,69
+Cowboys,DT,#94,Michael Myers,66
+Cowboys,DT,#60,John Nix,44
+Cowboys,FB,#34,Jamar Martin,71
+Cowboys,FB,#44,Robert Thomas,69
+Cowboys,FS,#31,Roy Williams,82
+Cowboys,FS,#24,Tony Dixon,54
+Cowboys,HB,#22,Emmitt Smith,82
+Cowboys,HB,#35,Troy Hambrick,69
+Cowboys,HB,#33,Michael Wiley,56
+Cowboys,K,#6,Tim Seder,53
+Cowboys,LE,#98,Greg Ellis,84
+Cowboys,LE,#72,Dwayne Missouri,54
+Cowboys,LE,#90,Byron Frisch,53
+Cowboys,LG,#73,Larry Allen,99
+Cowboys,LOLB,#51,Kevin Hardy,73
+Cowboys,LOLB,#55,Markus Steele,66
+Cowboys,LOLB,#56,Orantes Grant,48
+Cowboys,LT,#76,Flozell Adams,83
+Cowboys,LT,#79,Char-ron Dorsey,63
+Cowboys,MLB,#59,Dat Nguyen,77
+Cowboys,MLB,#50,Jamal Brooks,49
+Cowboys,P,#4,Micah Knorr,69
+Cowboys,QB,#17,Quincy Carter,72
+Cowboys,QB,#7,Chad Hutchinson,65
+Cowboys,QB,#2,Anthony Wright,62
+Cowboys,RE,#96,Ebenezer Ekuban,71
+Cowboys,RE,#93,Peppi Zellner,65
+Cowboys,RG,#61,Kelvin Garmon,64
+Cowboys,RG,#71,Al Jackson,54
+Cowboys,ROLB,#52,Dexter Coakley,85
+Cowboys,ROLB,#46,Keith Adams,46
+Cowboys,RT,#77,Solomon Page,82
+Cowboys,RT,#63,Aaron Gibson,69
+Cowboys,SS,#28,Darren Woodson,93
+Cowboys,TE,#82,Tony McGee,71
+Cowboys,TE,#86,Mike Lucky,56
+Cowboys,TE,#88,Jeff Robinson,54
+Cowboys,WR,#84,Joey Galloway,81
+Cowboys,WR,#81,Raghib Ismail,80
+Cowboys,WR,#14,Antonio Bryant,69
+Cowboys,WR,#87,Ken-Yon Rambo,59
+Cowboys,WR,#80,Reggie Swinton,54
+Giants,C,#52,Dusty Zeigler,73
+Giants,C,#62,Terance Wagner,42
+Giants,CB,#31,Jason Sehorn,83
+Giants,CB,#25,Will Allen,73
+Giants,CB,#24,William Peterson,70
+Giants,CB,#22,Ralph Brown,55
+Giants,DT,#75,Keith Hamilton,74
+Giants,DT,#97,Cornelius Griffin,69
+Giants,DT,#70,Lance Legree,46
+Giants,DT,#74,Ross Kolodziej,44
+Giants,FB,#20,Sean Bennett,55
+Giants,FS,#23,Omar Stoutmire,63
+Giants,HB,#21,Tiki Barber,82
+Giants,HB,#27,Ron Dayne,75
+Giants,HB,#29,Damon Washington,53
+Giants,K,#2,Owen Pochman,58
+Giants,LE,#92,Michael Strahan,99
+Giants,LE,#95,Frank Ferrara,38
+Giants,LG,#69,Richard Seubert,47
+Giants,LG,#68,Omar Smith,44
+Giants,LOLB,#53,Brandon Short,62
+Giants,LOLB,#57,Clayton White,48
+Giants,LT,#67,Chris Bober,63
+Giants,LT,#76,Jeff Hatch,59
+Giants,MLB,#58,Michael Barrow,86
+Giants,MLB,#59,Kevin Lewis,45
+Giants,P,#8,Rodney Williams,84
+Giants,QB,#5,Kerry Collins,77
+Giants,QB,#12,Jesse Palmer,62
+Giants,QB,#17,Darnell Dinkins,41
+Giants,RE,#90,Kenny Holmes,74
+Giants,RE,#96,Cedric Scott,54
+Giants,RG,#66,Jason Whittie,62
+Giants,ROLB,#55,Dhani Jones,58
+Giants,ROLB,#54,Nick Greisen,53
+Giants,RT,#77,Luke Petitgout,80
+Giants,RT,#78,Mike Rosenthal,62
+Giants,SS,#36,Shaun Williams,86
+Giants,SS,#35,Clarence LeBlanc,45
+Giants,TE,#80,Jeremy Shockey,75
+Giants,TE,#83,Marcellus Rivers,57
+Giants,TE,#89,Dan Campbell,57
+Giants,WR,#81,Amani Toomer,83
+Giants,WR,#88,Ike Hilliard,78
+Giants,WR,#84,Tim Carter,68
+Giants,WR,#86,Ron Dixon,68
+Giants,WR,#87,Daryl Jones,58
+Giants,WR,#85,Jonathan Carter,57
+Buccaneers,C,#62,Jeff Christy,86
+Buccaneers,C,#75,Todd Washington,68
+Buccaneers,CB,#20,Ronde Barber,89
+Buccaneers,CB,#25,Brian Kelly,78
+Buccaneers,CB,#26,Dwight Smith,70
+Buccaneers,CB,#35,Corey Ivy,50
+Buccaneers,CB,#30,Anthony Midget,48
+Buccaneers,DT,#99,Warren Sapp,99
+Buccaneers,DT,#92,Anthony McFarland,82
+Buccaneers,DT,#91,Chartric Darby,52
+Buccaneers,FB,#43,Jameel Cook,70
+Buccaneers,FS,#34,Dexter Jackson,67
+Buccaneers,FS,#38,John Howell,49
+Buccaneers,HB,#32,Michael Pittman,78
+Buccaneers,HB,#40,Mike Alstott,78
+Buccaneers,HB,#36,Travis Stephens,63
+Buccaneers,HB,#22,Aaron Stecker,62
+Buccaneers,HB,#29,Byron Hanspard ,57
+Buccaneers,K,#7,Martin Gramatica,90
+Buccaneers,LE,#78,Marcus Jones,80
+Buccaneers,LE,#94,Greg Spires,48
+Buccaneers,LG,#77,Kerry Jenkins,83
+Buccaneers,LOLB,#51,Alshermond Singleton,65
+Buccaneers,LOLB,#58,Jack Golden,45
+Buccaneers,LT,#67,Kenyatta Walker,76
+Buccaneers,LT,#72,Roman Oben,74
+Buccaneers,MLB,#53,Shelton Quarles,67
+Buccaneers,MLB,#52,Nate Webster,65
+Buccaneers,P,#9,Tom Tupa,64
+Buccaneers,QB,#14,Brad Johnson,75
+Buccaneers,QB,#11,Rob Johnson,71
+Buccaneers,QB,#10,Shaun King,68
+Buccaneers,QB,#1,Joe Hamilton,51
+Buccaneers,RE,#97,Simeon Rice,86
+Buccaneers,RE,#96,Ellis Wyms,55
+Buccaneers,RG,#60,Cosey Coleman,70
+Buccaneers,RG,#65,Russ Hochstein,48
+Buccaneers,ROLB,#55,Derrick Brooks,96
+Buccaneers,ROLB,#56,Eugene McCaslin,57
+Buccaneers,RT,#71,Jerry Wunsch,63
+Buccaneers,RT,#69,Pete Pierson,54
+Buccaneers,SS,#47,John Lynch,95
+Buccaneers,SS,#46,David Gibson,50
+Buccaneers,TE,#85,Ken Dilger,78
+Buccaneers,TE,#81,Marco Battaglia,62
+Buccaneers,TE,#80,Todd Yoder,39
+Buccaneers,WR,#19,Keyshawn Johnson,92
+Buccaneers,WR,#87,Keenan McCardell,80
+Buccaneers,WR,#82,Joe Jurevicius,74
+Buccaneers,WR,#4,Marquise Walker,68
+Buccaneers,WR,#83,Keith Poole,65
+Buccaneers,WR,#86,Karl Williams,61
+Buccaneers,WR,#21,Frank Murphy,53
+Saints,C,#62,Jerry Fontenot,72
+Saints,C,#67,Bubba Miller,72
+Saints,C,#61,John Romero,64
+Saints,CB,#22,Fred Thomas,79
+Saints,CB,#21,Dale Carter,78
+Saints,CB,#27,Ken Irvan,69
+Saints,CB,#23,Kevin Mathis,64
+Saints,CB,#36,Michael Hawthorne,63
+Saints,CB,#43,Keyuo Craver,56
+Saints,DT,#91,Grady Jackson,83
+Saints,DT,#99,Norman Hand,82
+Saints,DT,#92,Martin Chase,56
+Saints,DT,#75,Richard Seals,51
+Saints,FB,#33,Moran Norris,70
+Saints,FB,#41,Terrell Smith,70
+Saints,FS,#20,Jay Bellamy,74
+Saints,FS,#40,Mel Mitchell,58
+Saints,HB,#26,Deuce McAllister,80
+Saints,HB,#28,Fred McAfee,57
+Saints,K,#3,John Carney,88
+Saints,LE,#94,Charles Grant,70
+Saints,LE,#98,Willie Whitehead,67
+Saints,LG,#63,Wally Williams,84
+Saints,LG,#64,Kendyl Jacox,64
+Saints,LG,#79,Mitch White,42
+Saints,LOLB,#52,Sederick Hodges,70
+Saints,LT,#68,Kyle Turley,91
+Saints,LT,#74,Scott Sanderson,47
+Saints,MLB,#56,Charlie Clemons,83
+Saints,MLB,#51,Bryan Cox,79
+Saints,P,#4,Toby Gowin,70
+Saints,QB,#2,Aaron Brooks,84
+Saints,QB,#12,Jake Delhomme,54
+Saints,QB,#8,Jeff Lewis,53
+Saints,RE,#93,Darren Howard,82
+Saints,RE,#90,Kenny Smith,62
+Saints,RG,#65,LeCharles Bentley,69
+Saints,RG,#72,Tutan Reyes,41
+Saints,ROLB,#54,Darrin Smith,68
+Saints,ROLB,#95,James Allen,56
+Saints,RT,#66,Victor Riley,85
+Saints,RT,#60,Spencer Folau,74
+Saints,SS,#29,Sammy Knight,90
+Saints,SS,#37,Steve Gleason,48
+Saints,TE,#88,David Sloan,79
+Saints,TE,#82,Boo Williams,66
+Saints,TE,#81,Lamont Hall,58
+Saints,WR,#87,Joe Horn,88
+Saints,WR,#83,Donte Stallworth,75
+Saints,WR,#80,Jerome Pathon,72
+Saints,WR,#86,Jake Reed,65
+Saints,WR,#84,Michael Lewis,50
+Saints,WR,#89,Onome Ojo,44
+Falcons,C,#63,Robert Garza,69
+Falcons,C,#62,Todd McClure,66
+Falcons,CB,#34,Ray Buchanan,85
+Falcons,CB,#33,Ashley Ambrose,79
+Falcons,CB,#23,Allen Rossum,63
+Falcons,CB,#24,Fred Weary,58
+Falcons,CB,#37,Darrick Vaughn,55
+Falcons,DT,#95,Edward Jasper,69
+Falcons,DT,#98,Travis Hall,69
+Falcons,DT,#99,Ron Moore,57
+Falcons,DT,#93,Maa Tanuvasa,55
+Falcons,FB,#44,Bob Christian,86
+Falcons,FS,#41,Keith Lyle,65
+Falcons,FS,#30,Keion Carpenter,62
+Falcons,HB,#28,Warrick Dunn,83
+Falcons,HB,#45,T.J. Duckett,75
+Falcons,HB,#43,Maurice Smith,64
+Falcons,HB,#36,Travis Jervey,52
+Falcons,K,#4,Jay Feely,74
+Falcons,LE,#75,Shane Dronett,64
+Falcons,LE,#79,Ronald Flemons,64
+Falcons,LG,#64,Martin Bibla,63
+Falcons,LG,#71,Travis Claridge,63
+Falcons,LOLB,#52,Matt Stewart,59
+Falcons,LOLB,#90,Will Overstreet,57
+Falcons,LT,#70,Bob Whitfield,87
+Falcons,MLB,#56,Keith Brooking,84
+Falcons,MLB,#59,John Holecek,66
+Falcons,MLB,#53,Mark Simoneau,65
+Falcons,MLB,#54,Chris Draft,64
+Falcons,P,#9,Chris Mohr,67
+Falcons,QB,#7,Michael Vick,78
+Falcons,QB,#11,Doug Johnson,58
+Falcons,QB,#15,Kurt Kittner,58
+Falcons,RE,#91,Brady Smith,62
+Falcons,RG,#65,Kynan Forney,59
+Falcons,ROLB,#97,Patrick Kerney,76
+Falcons,ROLB,#94,John Thierry,65
+Falcons,RT,#74,Todd Weiner,72
+Falcons,RT,#66,Michael Thompson,60
+Falcons,SS,#22,Gerald McBurrows,57
+Falcons,SS,#35,Johndale Carty,50
+Falcons,SS,#42,Corey Hall,47
+Falcons,TE,#83,Alge Crumpler,71
+Falcons,TE,#89,Reggie Kelly,70
+Falcons,TE,#85,Brian Kozlowski,65
+Falcons,WR,#81,Jeff Graham,72
+Falcons,WR,#84,Shawn Jefferson,72
+Falcons,WR,#86,Brian Finneran,68
+Falcons,WR,#80,Travis McGriff,63
+Falcons,WR,#87,Alvis Whitted,60
+Falcons,WR,#88,Quentin McCord,59
+Falcons,WR,#19,Kahlil Hill,57
+Panthers,C,#60,Jeff Mitchell,84
+Panthers,C,#66,Louis Williams,54
+Panthers,CB,#21,Terry Cousin,63
+Panthers,CB,#25,DeRon Jenkins,59
+Panthers,CB,#31,Fred Vinson,58
+Panthers,CB,#34,Dante Wesley,52
+Panthers,CB,#42,Reggie Howard,51
+Panthers,CB,#28,Deveron Harper,49
+Panthers,DT,#94,Sean Gilbert,69
+Panthers,DT,#77,Kris Jenkins,64
+Panthers,DT,#98,Shane Burton,64
+Panthers,DT,#99,Brentson Buckner,64
+Panthers,FB,#45,Brad Hoover,72
+Panthers,FB,#32,Kyle Johnson,61
+Panthers,FS,#27,Deon Grant,74
+Panthers,FS,#39,Damien Richardson,57
+Panthers,HB,#26,Lamar Smith,75
+Panthers,HB,#20,DeShaun Foster,74
+Panthers,HB,#36,Nick Goings,63
+Panthers,HB,#33,Joe Montgomery,61
+Panthers,HB,#22,Dee Brown,56
+Panthers,K,#4,John Kasay,75
+Panthers,LE,#90,Julius Peppers,83
+Panthers,LE,#91,John Milem,57
+Panthers,LG,#63,Jamar Nesbit,66
+Panthers,LG,#76,Leander Jordan,46
+Panthers,LOLB,#53,Hannibal Navies,65
+Panthers,LOLB,#50,Brad Jackson,62
+Panthers,LOLB,#56,Jason Kyle,46
+Panthers,LT,#73,Todd Steussie,83
+Panthers,LT,#71,Melvin Tuten,49
+Panthers,MLB,#55,Dan Morgan,80
+Panthers,MLB,#57,Lester Towns,69
+Panthers,P,#5,Todd Sauerbrun,91
+Panthers,QB,#16,Chris Weinke,70
+Panthers,QB,#9,Rodney Peete,63
+Panthers,QB,#12,Randy Fasani,50
+Panthers,RE,#93,Mike Rucker,73
+Panthers,RE,#96,Jay Williams,46
+Panthers,RG,#65,Kevin Donnalley,61
+Panthers,RG,#78,Jeno James,45
+Panthers,ROLB,#58,Mark Fields,71
+Panthers,ROLB,#52,Kory Minor,58
+Panthers,RT,#70,Chris Terry,79
+Panthers,SS,#30,Mike Minter,77
+Panthers,SS,#40,Jarrod Cooper,58
+Panthers,TE,#85,Wesley Walls,85
+Panthers,TE,#86,Kris Mangum,49
+Panthers,WR,#87,Muhsin Muhammad,85
+Panthers,WR,#89,Steve Smith,67
+Panthers,WR,#83,Patrick Jeffers,66
+Panthers,WR,#82,Isaac Byrd,65
+Panthers,WR,#88,Karl Hankton,48
+Rams,C,#67,Andy McCollum,74
+Rams,C,#65,Frank Garcia,67
+Rams,CB,#35,Aeneas Williams,97
+Rams,CB,#21,Dexter McCleon,80
+Rams,CB,#32,Dre' Bly,79
+Rams,CB,#23,Jerametrius Butler,63
+Rams,CB,#22,Travis Fisher,60
+Rams,DT,#90,Jeff Zgonina,76
+Rams,DT,#92,Damione Lewis,71
+Rams,DT,#66,Brian Young,70
+Rams,DT,#79,Ryan Pickett,65
+Rams,FB,#42,James Hodgins,79
+Rams,FB,#44,Chris Hetherington,67
+Rams,FS,#20,Kim Herring,79
+Rams,FS,#37,Steve Bellisari,47
+Rams,FS,#38,Rich Coady,46
+Rams,HB,#28,Marshall Faulk,99
+Rams,HB,#24,Trung Canidate,77
+Rams,HB,#34,Lamar Gordon,65
+Rams,K,#14,Jeff Wilkins,88
+Rams,LE,#57,Leonard Little,85
+Rams,LE,#95,John Burrough,45
+Rams,LG,#61,Tom Nutten,81
+Rams,LG,#71,Kualana Noa,55
+Rams,LOLB,#55,Robert Thomas,69
+Rams,LOLB,#58,Don Davis,68
+Rams,LT,#76,Orlando Pace,98
+Rams,LT,#64,Travis Scott,50
+Rams,MLB,#59,Jamie Duncan,78
+Rams,MLB,#56,Dustin Cohen,53
+Rams,P,#17,Mitch Berger,92
+Rams,QB,#13,Kurt Warner,97
+Rams,QB,#12,Jamie Martin,61
+Rams,QB,#10,Marc Bulger,50
+Rams,RE,#98,Grant Wistrom,90
+Rams,RE,#97,Tyoka Jackson,59
+Rams,RG,#62,Adam Timmerman,94
+Rams,RG,#73,Cameron Spikes,63
+Rams,ROLB,#52,Tommy Polley,81
+Rams,ROLB,#51,Courtland Bullard,66
+Rams,RT,#70,John St. Clair,64
+Rams,RT,#75,DeMarcus Curry,64
+Rams,SS,#31,Adam Archuleta,82
+Rams,TE,#84,Ernie Conwell,75
+Rams,TE,#86,Brandon Manumaleuna,56
+Rams,WR,#80,Isaac Bruce,92
+Rams,WR,#81,Torry Holt,92
+Rams,WR,#87,Ricky Proehl,75
+Rams,WR,#82,Terrance Wilkins,72
+Rams,WR,#83,Yo Murphy,60
+Rams,WR,#89,Eric Crouch,60
+Rams,WR,#88,Francis St. Paul,52
+Seahawks,C,#61,Robbie Tobeck,77
+Seahawks,C,#64,Siitupe Peko,52
+Seahawks,C,#52,J. Philippe Darche,36
+Seahawks,CB,#24,Shawn Springs,93
+Seahawks,CB,#26,Doug Evans,75
+Seahawks,CB,#21,Ken Lucas,74
+Seahawks,CB,#27,Willie Williams,69
+Seahawks,CB,#22,Paul Miranda,56
+Seahawks,DT,#93,John Randle,93
+Seahawks,DT,#90,Chad Eaton,77
+Seahawks,DT,#98,Cedric Woodard,47
+Seahawks,FB,#38,Mack Strong,76
+Seahawks,FB,#44,Heath Evans,76
+Seahawks,FS,#31,Marcus Robertson,82
+Seahawks,FS,#29,Curtis Fuller,54
+Seahawks,HB,#37,Shaun Alexander,89
+Seahawks,HB,#20,Maurice Morris,68
+Seahawks,HB,#35,Jay Graham,45
+Seahawks,K,#9,Rian Lindell,53
+Seahawks,LE,#92,Lamar King,73
+Seahawks,LE,#91,Anton Palepoi,62
+Seahawks,LE,#95,John Hilliard,39
+Seahawks,LG,#76,Steve Hutchinson,82
+Seahawks,LOLB,#51,Anthony Simmons,81
+Seahawks,LOLB,#54,DeAndre Lewis,52
+Seahawks,LOLB,#55,Marcus Bell,52
+Seahawks,LT,#71,Walter Jones,92
+Seahawks,MLB,#99,Levon Kirkland,87
+Seahawks,MLB,#58,Isaiah Kacyvenski,49
+Seahawks,MLB,#57,Orlando Huff,38
+Seahawks,P,#10,Jeff Feagles,83
+Seahawks,QB,#4,Trent Dilfer,80
+Seahawks,QB,#8,Matt Hasselbeck,71
+Seahawks,QB,#5,Ryan Leaf,54
+Seahawks,RE,#97,Brandon Mitchell,77
+Seahawks,RE,#78,Antonio Cochran,63
+Seahawks,RG,#69,Floyd Wedderburn,66
+Seahawks,RG,#62,Chris Gray,63
+Seahawks,ROLB,#94,Chad Brown,88
+Seahawks,ROLB,#59,Tim Terry,55
+Seahawks,RT,#75,Chris McIntosh,71
+Seahawks,RT,#77,Floyd Womack,61
+Seahawks,SS,#25,Reggie Tongue,76
+Seahawks,SS,#33,Maurice Kelly,48
+Seahawks,TE,#86,Jerramy Stevens,71
+Seahawks,TE,#89,Itula Mili,62
+Seahawks,WR,#82,Darrell Jackson,82
+Seahawks,WR,#81,Koren Robinson,78
+Seahawks,WR,#84,Bobby Engram,69
+Seahawks,WR,#88,James Williams,66
+Seahawks,WR,#85,Alex Bannister,61
+Seahawks,WR,#18,Damon Hodge,58
+Seahawks,WR,#83,Fabian Bownes,45
+49ers,C,#62,Jeremy Newberry,84
+49ers,C,#61,Jeff McCurley,58
+49ers,CB,#29,Ahmed Plummer,84
+49ers,CB,#36,Jason Webster,68
+49ers,CB,#24,Mike Rumph,67
+49ers,CB,#26,Rashad Holman,59
+49ers,CB,#21,Anthony Parker,50
+49ers,CB,#23,Jimmy Williams,49
+49ers,DT,#97,Bryant Young,96
+49ers,DT,#94,Dana Stubblefield,74
+49ers,DT,#75,Jim Flanigan,63
+49ers,DT,#92,Reggie McGrew,58
+49ers,FB,#40,Fred Beasley,82
+49ers,FB,#22,Terry Jackson,62
+49ers,FS,#31,Zack Bronson,76
+49ers,FS,#38,Ronnie Heard,66
+49ers,FS,#46,Kevin Curtis,55
+49ers,HB,#20,Garrison Hearst,85
+49ers,HB,#32,Kevan Barlow,74
+49ers,HB,#27,Paul Smith,60
+49ers,HB,#43,Jonas Lewis,47
+49ers,K,#6,Jose Cortez,64
+49ers,LE,#95,John Engelberger,76
+49ers,LE,#91,Chike Okeafor,57
+49ers,LG,#74,Dave Fiore,85
+49ers,LG,#68,Chad Ward,49
+49ers,LOLB,#98,Julian Peterson,75
+49ers,LOLB,#57,Saleem Rasheed,67
+49ers,LT,#63,Derrick Deese,87
+49ers,MLB,#50,Derek M. Smith,70
+49ers,MLB,#54,Quincy Stewart,35
+49ers,P,#7,Jason Baker,66
+49ers,QB,#5,Jeff Garcia,92
+49ers,QB,#8,Cade McNown,61
+49ers,QB,#13,Tim Rattay,52
+49ers,QB,#19,Giovanni Carmazzi,38
+49ers,RE,#96,Andre Carter,82
+49ers,RE,#99,Sean Moran,56
+49ers,RG,#60,Ron Stone,94
+49ers,ROLB,#55,Jamie Winborn,70
+49ers,ROLB,#53,Jeff Ulbrich,67
+49ers,RT,#78,Scott Gragg,81
+49ers,RT,#77,Matt Willig,70
+49ers,SS,#33,Tony Parrish,81
+49ers,SS,#45,Al Blades,61
+49ers,SS,#28,John Keith,57
+49ers,TE,#82,Eric Johnson,71
+49ers,TE,#88,Justin Swift,46
+49ers,WR,#81,Terrell Owens,98
+49ers,WR,#83,J.J. Stokes,77
+49ers,WR,#89,Tai Streets,68
+49ers,WR,#25,Vinny Sutherland,56
+49ers,WR,#84,Cedrick Wilson,48
+Cardinals,C,#60,Mike Gruttadauria,78
+Cardinals,C,#50,Jason Starkey,41
+Cardinals,CB,#22,Duane Starks,83
+Cardinals,CB,#36,David Barrett,57
+Cardinals,CB,#45,Renaldo Hill,49
+Cardinals,CB,#23,Coby Rhinehart,40
+Cardinals,DT,#91,Wendell Bryant,74
+Cardinals,DT,#78,Mao Tosi,56
+Cardinals,DT,#98,Russell Davis,56
+Cardinals,DT,#92,Barron Tanner,52
+Cardinals,DT,#94,Marcus Bell,51
+Cardinals,DT,#79,Mario Fatafehi,50
+Cardinals,FB,#34,Joel Makovicka,64
+Cardinals,FB,#39,Dennis McKinley,60
+Cardinals,FS,#42,Kwamie Lassiter,92
+Cardinals,FS,#44,Michael Stone,54
+Cardinals,HB,#26,Thomas Jones,74
+Cardinals,HB,#33,Josh Scobey,60
+Cardinals,HB,#31,Marcel Shipp,59
+Cardinals,HB,#20,Damien Anderson,58
+Cardinals,K,#7,Bill Gramatica,76
+Cardinals,LE,#97,Fred Wakefield,58
+Cardinals,LE,#95,Thomas Burke,51
+Cardinals,LG,#66,Pete Kendall,87
+Cardinals,LG,#67,Chris Dishman,50
+Cardinals,LOLB,#55,Raynoch Thompson,63
+Cardinals,LOLB,#56,LeVar Woods,51
+Cardinals,LT,#70,L.J. Shelton,73
+Cardinals,MLB,#57,Ronald McKinnon,77
+Cardinals,MLB,#51,Johnny Rutledge,50
+Cardinals,P,#10,Scott Player,91
+Cardinals,QB,#16,Jake Plummer,78
+Cardinals,QB,#12,Josh McCown,55
+Cardinals,QB,#14,Chris Greisen,53
+Cardinals,RE,#93,Kyle Vanden Bosch,69
+Cardinals,RE,#96,Dennis Johnson,66
+Cardinals,RG,#75,Leonard Davis,90
+Cardinals,ROLB,#59,Rod Fredrickson,69
+Cardinals,ROLB,#52,Levar Fisher,68
+Cardinals,ROLB,#54,Sekou Sanyika,47
+Cardinals,RT,#65,Anthony Clement,74
+Cardinals,RT,#61,Jarvis Borum,64
+Cardinals,SS,#24,Adrian Wilson,71
+Cardinals,SS,#41,Justin Lucas,43
+Cardinals,TE,#85,Freddie Jones,84
+Cardinals,TE,#87,Steve Bush,54
+Cardinals,TE,#83,Tywan Mitchell,53
+Cardinals,WR,#89,David Boston,91
+Cardinals,WR,#81,Frank Sanders,76
+Cardinals,WR,#82,MarTay Jenkins,65
+Cardinals,WR,#84,Arnold Jackson,58
+Cardinals,WR,#11,Jason McAddley,56
+Cardinals,WR,#86,Bryan Gilmore,54
+Free Agents,C,,Roman Fortin,76
+Free Agents,C,,Roger Duffy,70
+Free Agents,C,,Ben Fricke,59
+Free Agents,C,,Scott Curry,51
+Free Agents,C,,Bryan Stoltenberg,50
+Free Agents,C,,Derek Engler,45
+Free Agents,C,,Ben Lynch,44
+Free Agents,C,,Quentin Neujahr,44
+Free Agents,CB,,Terrell Buckley,79
+Free Agents,CB,,James Hasty,71
+Free Agents,CB,,Donovan Greer,70
+Free Agents,CB,,Jimmy Hitchcock,65
+Free Agents,CB,,Darrien Gordon,62
+Free Agents,CB,,Dave Thomas,58
+Free Agents,CB,,Monty Montgomery,56
+Free Agents,CB,,Thomas Randolph,54
+Free Agents,CB,,Elijah Williams,49
+Free Agents,CB,,Marquis Walker,49
+Free Agents,CB,,Jeremy Lincoln,48
+Free Agents,CB,,Raymond Jackson,48
+Free Agents,DT,,Sam Adams,81
+Free Agents,DT,,Brad Culpepper,65
+Free Agents,DT,,Christian Peter,61
+Free Agents,DT,,Tom Barndt,58
+Free Agents,DT,,Mike Wells,51
+Free Agents,DT,,Mike D. Jones,47
+Free Agents,DT,,Shawn Swayda,43
+Free Agents,DT,,Dimitrius Underwood,40
+Free Agents,FB,,Sam Gash,83
+Free Agents,FB,,Kimble Anders,77
+Free Agents,FB,,Donnell Bennett,75
+Free Agents,FB,,Reggie Brown,75
+Free Agents,FB,,Obafemi Ayanbadejo,73
+Free Agents,FB,,Mike Sellers,57
+Free Agents,FB,,Dustin McClintock,49
+Free Agents,FS,,Willie Clay,68
+Free Agents,FS,,Darren Perry,66
+Free Agents,FS,,George Teague,66
+Free Agents,FS,,Darryl Williams,65
+Free Agents,FS,,Michael Dumas,64
+Free Agents,FS,,Charles Fisher,53
+Free Agents,FS,,Darrius Johnson,52
+Free Agents,FS,,Jason Moore,52
+Free Agents,FS,,Don Morgan,51
+Free Agents,FS,,Erik Olson,43
+Free Agents,HB,,Ricky Watters,82
+Free Agents,HB,,Jamal Anderson,80
+Free Agents,HB,,Dorsey Levens,69
+Free Agents,HB,,Tim Biakabutuka,66
+Free Agents,HB,,Terry Allen,65
+Free Agents,HB,,Errict Rhett,62
+Free Agents,HB,,Adrian Murrell,61
+Free Agents,HB,,Sedrick Irvin,60
+Free Agents,HB,,Glyn Milburn,59
+Free Agents,HB,,Raymont Harris,58
+Free Agents,HB,,Mario Bates,55
+Free Agents,HB,,Jermaine Fazande,54
+Free Agents,HB,,Rodney Thomas,54
+Free Agents,HB,,Justin Watson,53
+Free Agents,HB,,Ken Oxendine,52
+Free Agents,HB,,Autrey Denson,51
+Free Agents,HB,,Kenny Bynum,50
+Free Agents,HB,,Frank Moreau,49
+Free Agents,HB,,Winslow Oliver,44
+Free Agents,K,,Gary Anderson,82
+Free Agents,K,,Cary Blanchard,69
+Free Agents,K,,Brad Daluiso,56
+Free Agents,K,,Doug Pelfrey,46
+Free Agents,K,,Cedric Oglesby,45
+Free Agents,K,,Jamie Rheem,45
+Free Agents,LE,,Michael Sinclair,76
+Free Agents,LE,,Chidi Ahanotu,73
+Free Agents,LE,,Leon Lett,71
+Free Agents,LE,,Jason Peter,70
+Free Agents,LE,,Andre Wadsworth,61
+Free Agents,LE,,Cedric Jones,58
+Free Agents,LE,,Lester Archambeau,58
+Free Agents,LE,,Michael Bankston,57
+Free Agents,LE,,Shawn Price,32
+Free Agents,LG,,Ray Brown,85
+Free Agents,LG,,Glenn Parker,74
+Free Agents,LG,,Matt Campbell,72
+Free Agents,LG,,Keith Sims,71
+Free Agents,LG,,Calvin Collins,66
+Free Agents,LG,,Phil Ostrowski,50
+Free Agents,LOLB,,Keith Mitchell,68
+Free Agents,LOLB,,Sam Rogers,68
+Free Agents,LOLB,,Lee Woodall,65
+Free Agents,LOLB,,Dean Wells,64
+Free Agents,LOLB,,Dwight Hollier,62
+Free Agents,LOLB,,Joe Bowden,59
+Free Agents,LOLB,,Vinson Smith,54
+Free Agents,LOLB,,Marcus Buckley,52
+Free Agents,LOLB,,Lorenzo Styles,50
+Free Agents,LOLB,,Teddy Sims,49
+Free Agents,LOLB,,Anthony Jordan,46
+Free Agents,LOLB,,K.D. Williams,46
+Free Agents,LT,,John Fina,81
+Free Agents,LT,,Lomas Brown,76
+Free Agents,LT,,Andy Heck,58
+Free Agents,LT,,Tony Ramirez,51
+Free Agents,LT,,David Walden,50
+Free Agents,LT,,Noel LaMontagne,46
+Free Agents,MLB,,Bernardo Harris,78
+Free Agents,MLB,,Barron Wortham,68
+Free Agents,MLB,,Robert Jones,61
+Free Agents,MLB,,Dwayne Gordon,59
+Free Agents,MLB,,George Koonce,59
+Free Agents,MLB,,Kivuusama Mays,58
+Free Agents,MLB,,Mark Maddox,58
+Free Agents,MLB,,Scott Kowalkowski,52
+Free Agents,MLB,,Corey Terry,48
+Free Agents,MLB,,Kenyatta Wright,47
+Free Agents,MLB,,Chester Burnett,45
+Free Agents,P,,Lee Johnson,76
+Free Agents,P,,Tommy Barnhardt,67
+Free Agents,P,,Lee Araguz,57
+Free Agents,P,,Brent Bartholomew,53
+Free Agents,P,,David Leaverton,53
+Free Agents,P,,Tom Hutton,49
+Free Agents,P,,Barry Cantrell,46
+Free Agents,P,,Brad Costello,44
+Free Agents,QB,,Randall Cunningham,68
+Free Agents,QB,,Tony Banks,64
+Free Agents,QB,,Jeff George,57
+Free Agents,QB,,Mark Rypien,57
+Free Agents,QB,,Billy Joe Tolliver,55
+Free Agents,QB,,Billy Joe Hobert,53
+Free Agents,QB,,Dave Brown,53
+Free Agents,QB,,Eric Zeier,53
+Free Agents,QB,,Jason Garrett,53
+Free Agents,QB,,Michael Bishop,52
+Free Agents,QB,,Moses Moreno,52
+Free Agents,QB,,Glenn Foley,50
+Free Agents,QB,,Paul Justin,50
+Free Agents,QB,,Josh Heupel,45
+Free Agents,RE,,Chuck Smith,66
+Free Agents,RE,,Neil Smith,65
+Free Agents,RE,,Tracy Scroggins,55
+Free Agents,RE,,Cedric Harden,44
+Free Agents,RE,,Lionel Barnes,41
+Free Agents,RG,,Lester Holmes,68
+Free Agents,RG,,Todd Rucci,68
+Free Agents,RG,,Brian DeMarco,67
+Free Agents,RG,,David Diaz-Infante,65
+Free Agents,RG,,Jorge Diaz,51
+Free Agents,ROLB,,Ed McDaniel,73
+Free Agents,ROLB,,Todd F. Collins,67
+Free Agents,ROLB,,Elijah Alexander,63
+Free Agents,ROLB,,Andy Katzenmoyer,60
+Free Agents,ROLB,,Mike Morton,60
+Free Agents,ROLB,,Corey Moore,59
+Free Agents,ROLB,,Marc Megna,48
+Free Agents,ROLB,,Phil Glover,48
+Free Agents,RT,,Harry Swayne,70
+Free Agents,RT,,Clarence Jones,66
+Free Agents,RT,,Robert Hicks,64
+Free Agents,RT,,Zefross Moss,58
+Free Agents,RT,,Chad Slaughter,52
+Free Agents,RT,,Siupeli Malamala,51
+Free Agents,SS,,Victor Green,84
+Free Agents,SS,,Chad Cota,74
+Free Agents,SS,,Henry Jones,74
+Free Agents,SS,,Ron Rice,69
+Free Agents,SS,,Tommy Bennett,61
+Free Agents,SS,,Calvin Jackson,60
+Free Agents,SS,,Tim Hauck,60
+Free Agents,SS,,Kerry Joseph,59
+Free Agents,SS,,Raion Hill,42
+Free Agents,TE,,Ben Coates,68
+Free Agents,TE,,Terry Hardy,66
+Free Agents,TE,,Damon Jones,59
+Free Agents,TE,,Jamie Asher,59
+Free Agents,TE,,O.J. Santiago,59
+Free Agents,TE,,Greg Clark,58
+Free Agents,TE,,Adam Young,55
+Free Agents,TE,,Andrew Jordan,55
+Free Agents,TE,,Brian Kinchen,52
+Free Agents,TE,,Pete Chryplewicz,50
+Free Agents,TE,,Scott Slutzker,37
+Free Agents,WR,,Antonio Freeman,78
+Free Agents,WR,,Willie Jackson,77
+Free Agents,WR,,Michael Westbrook,75
+Free Agents,WR,,Herman Moore,70
+Free Agents,WR,,Tony Martin,69
+Free Agents,WR,,O.J. McDuffie,65
+Free Agents,WR,,Darrin Chiaverini,64
+Free Agents,WR,,Bert Emanuel,63
+Free Agents,WR,,Wayne McGarity,63
+Free Agents,WR,,Yancey Thigpen,61
+Free Agents,WR,,Alex Connell,60
+Free Agents,WR,,Bobby Newcombe,60
+Free Agents,WR,,Jammi German,59
+Free Agents,WR,,Robert Wilson,57
+Free Agents,WR,,Craig Yeast,55
+Free Agents,WR,,Will Blackwell,55
+Free Agents,WR,,Chris Thomas,54
+Free Agents,WR,,Mac Cody,54
+Free Agents,WR,,Brian Stablein,53
+Free Agents,WR,,Eugene Baker,52
+Free Agents,WR,,Ronnie Harris,52
+Free Agents,WR,,David Dunn,51
+Free Agents,WR,,Kenny Shedd,51
+Free Agents,WR,,Drew O'Connor,48
+Free Agents,WR,,Tony Gaiter,47
+Free Agents,WR,,Thabiti Davis,41
