@@ -18,33 +18,37 @@ def get_approximate_values(update_seasons):
     for season in update_seasons:
         datas = []
         for team_str in NFL_SR_ABBR_LIST:
-            html = pfr_request(f'https://www.pro-football-reference.com/teams/{team_str}/{season}_roster.htm', session=session)
-            page = get_webpage_soup(html.text)
-            page = get_webpage_soup(str(page).replace('<!--', '').replace('-->', ''))
-            page = get_webpage_soup(str(page), 'table', {'id': 'roster'})
+            try:
+                html = pfr_request(f'https://www.pro-football-reference.com/teams/{team_str}/{season}_roster.htm', session=session)
+                page = get_webpage_soup(html.text)
+                page = get_webpage_soup(str(page).replace('<!--', '').replace('-->', ''))
+                page = get_webpage_soup(str(page), 'table', {'id': 'roster'})
 
-            for i in page.find_all('tr'):
-                player = i.find('td', {'data-stat': 'player'})
-                if player is None:
-                    continue
-                approx_value = i.find('td', {'data-stat': 'av'})
-                if approx_value.text == '':
-                    approx_value = None
-                a = player.find('a')
-                player_id = a.get('href').split('/')[-1].replace('.htm', '') if a is not None else None
-                name = player.text
+                for i in page.find_all('tr'):
+                    player = i.find('td', {'data-stat': 'player'})
+                    if player is None:
+                        continue
+                    approx_value = i.find('td', {'data-stat': 'av'})
+                    if approx_value.text == '':
+                        approx_value = None
+                    a = player.find('a')
+                    player_id = a.get('href').split('/')[-1].replace('.htm', '') if a is not None else None
+                    name = player.text
 
-                if player_id is None and name == 'Team Total':
-                    continue
-                data = {
-                    'player_id': player_id,
-                    'name': name,
-                    'team': team_str,
-                    'season': season,
-                    'approximate_value': approx_value.text if approx_value is not None else 0
-                }
+                    if player_id is None and name == 'Team Total':
+                        continue
+                    data = {
+                        'player_id': player_id,
+                        'name': name,
+                        'team': team_str,
+                        'season': season,
+                        'approximate_value': approx_value.text if approx_value is not None else 0
+                    }
 
-                datas.append(data)
+                    datas.append(data)
+            except Exception as e:
+                print(e)
+                print(f"Requires manual intervention: {f'https://www.pro-football-reference.com/teams/{team_str}/{season}_roster.htm'}")
         df = pd.DataFrame(datas)
         df['approximate_value'] = df['approximate_value'].astype(int)
         frames[season] = df

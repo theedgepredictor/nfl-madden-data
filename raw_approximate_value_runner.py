@@ -7,7 +7,7 @@ from src.utils import get_seasons_to_update, find_year_for_season
 
 approximate_value_meta = {
     "name":'approximate_value',
-    "start_season": 2001,
+    "start_season": 2000,
     "raw_obj": get_approximate_values
     }
 FEATURE_STORE_METAS = [
@@ -28,7 +28,7 @@ def raw_pfr_runner():
         feature_store_name = fs_meta_obj['name']
         start_season = fs_meta_obj['start_season']
         ## Determine pump mode
-        update_seasons = get_seasons_to_update(root_path, feature_store_name)
+        update_seasons = [2000]#get_seasons_to_update(root_path, feature_store_name)
         current_season = find_year_for_season()
         skip_raw = False
         if len(update_seasons) == 1 and update_seasons[0] == current_season:
@@ -41,7 +41,7 @@ def raw_pfr_runner():
                 skip_raw = False # File does not exist yet
                 update_seasons = [update_seasons[0]-1, update_seasons[0]]
         if not skip_raw:
-            frames = fs_meta_obj['raw_obj'](update_seasons)
+            frames = fs_meta_obj['raw_obj']([2000])
             for season, df in frames.items():
                 df.to_csv(f"{root_path}/{feature_store_name}/{season}.csv", index=False)
 

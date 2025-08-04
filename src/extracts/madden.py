@@ -77,3 +77,19 @@ def make_raw_madden(load_seasons):
             frames[season] = get_madden_ratings_from_web(season)
     return frames
 
+
+## Add from nfl-madden-data pump
+def get_madden_ratings(season):
+    try:
+        df = pd.read_csv(f'https://github.com/theedgepredictor/nfl-madden-data/raw/main/data/madden/processed/{season}.csv')
+        return df
+    except:
+        return pd.DataFrame()
+
+## Add from nfl-madden-data pump
+def get_approximate_value(season):
+    try:
+        df = pd.read_csv(f'https://github.com/theedgepredictor/nfl-madden-data/raw/main/data/pfr/approximate_value/{season}.csv')
+        return df
+    except:
+        return pd.DataFrame()

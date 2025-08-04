@@ -1,6 +1,7 @@
 import pandas as pd
 
 from src.extracts.event import get_event_infos
+from src.extracts.madden import get_approximate_value, get_madden_ratings
 from src.extracts.player_stats import collect_players, collect_combine, collect_av, collect_roster
 from src.formatters import team_id_repl
 from src.utils import df_rename_fold
@@ -41,21 +42,7 @@ def get_static_players():
     df = df.merge(combine_df, on='player_id', how='left')
     df = df[[
         'player_id',
-        'name',
-        'common_first_name',
-        'first_name',
-        'last_name',
-        'short_name',
-        'football_name',
-        'suffix',
-        'esb_id',
-        'nfl_id',
         'pfr_id',
-        'pff_id',
-        'otc_id',
-        'espn_id',
-        'smart_id',
-        'birth_date',
         #'high_pos_group',
         #'position_group',
         #'position',
@@ -89,6 +76,23 @@ def get_static_players():
     df['last_updated'] = pd.to_datetime('now')
     return df
 
+def apply_rookie_av(df):
+    if df['draft_pick'] == 1:
+        df['last_season_av'] = 12
+    elif df['draft_pick'] == 2:
+        df['last_season_av'] = 11
+    elif df['draft_pick'] == 3:
+        df['last_season_av'] = 10.5
+    elif df['draft_pick'] == 4:
+        df['last_season_av'] = 9
+    elif df['draft_pick'] == 5:
+        df['last_season_av'] = 8.5
+    else:
+        df['last_season_av'] = (9 - df['draft_round']) * 0.5
+    return df
+
+
+
 
 def get_preseason_players(season):
     """
@@ -102,25 +106,52 @@ def get_preseason_players(season):
     df['is_rookie'] = (df['rookie_season'] == season) & (df.years_exp == 0)
 
     ### AV Extractor (Previous Season)
-    av_df = collect_av(season - 1)[[
+    av_df = get_approximate_value(season - 1)[[
         'player_id',
         'approximate_value'
     ]].rename(columns={'player_id': 'pfr_id', 'approximate_value': 'last_season_av'})
-    df = pd.merge(df, av_df, on='pfr_id', how='left').drop(columns=['week'])
+    df = pd.merge(df, av_df, on='pfr_id', how='left')
 
-    ### Games played last year
-    last_year_roster_df = collect_roster(season - 1)
-    last_year_roster_df = last_year_roster_df.drop_duplicates(subset=['player_id', 'week'], keep='last')
-    player_games_df = last_year_roster_df[((last_year_roster_df.week <= (18 if season - 1 >= 2021 else 17)) & (last_year_roster_df.status_abbr == 'A'))][['player_id']].copy()
-    player_games_df['last_year_regular_season_games_active'] = 1
-    player_games_df = player_games_df.groupby('player_id', group_keys=False).sum().reset_index(drop=False)
+    processed_madden_df = pd.concat([
+        get_madden_ratings(season),
+        get_madden_ratings(season-1),
+    ]).drop_duplicates(subset=['player_id'], keep=('first' if season != 2002 else 'last'))
 
-    player_post_games_df = last_year_roster_df[((last_year_roster_df.week > (18 if season - 1 >= 2021 else 17)) & (last_year_roster_df.status_abbr == 'A'))][['player_id']].copy()
-    player_post_games_df['last_year_post_season_games_active'] = 1
-    player_post_games_df = player_post_games_df.groupby('player_id', group_keys=False).sum().reset_index(drop=False)
-    player_games_df = pd.merge(last_year_roster_df[['player_id', 'season']].drop_duplicates(), player_games_df, on='player_id', how='left').drop(columns=['season'])
-    player_games_df = pd.merge(player_games_df, player_post_games_df, on='player_id', how='left')
-    df = df.merge(player_games_df, on='player_id', how='left')
+    processed_madden_df['season'] = season
+    df = pd.merge(df, processed_madden_df.drop(columns=['position_group']), on=['player_id','season'], how='left')
+
+    rookie_approx_value_df = df[df['is_rookie']==True].copy()
+    rookie_approx_value_df.draft_round = rookie_approx_value_df.draft_round.fillna(8)
+    rookie_approx_value_df.draft_pick = rookie_approx_value_df.draft_pick.fillna(rookie_approx_value_df.draft_pick.max() + 1)
+    rookie_approx_value_df = rookie_approx_value_df.apply(apply_rookie_av, axis=1)
+
+    df = df[df['is_rookie']==False].copy()
+    df = pd.concat([df, rookie_approx_value_df], ignore_index=True)
+
+    df = df.drop_duplicates(subset=['player_id'], keep='first').drop(columns=[
+        'team',
+        'week',
+        'position',
+        'jersey_number',
+        'status_abbr',
+        'position_group',
+        'high_pos_group',
+    ])
+    df = df[[
+        'season',
+        'player_id',
+        'madden_id',
+        'years_exp',
+        'is_rookie', 'last_season_av',  'overallrating', 'agility',
+         'acceleration', 'speed', 'stamina', 'strength', 'toughness', 'injury',
+         'awareness', 'jumping', 'trucking', 'throwpower', 'throwaccuracyshort',
+         'throwaccuracymid', 'throwaccuracydeep', 'playaction', 'throwonrun',
+         'carrying', 'ballcarriervision', 'stiffarm', 'spinmove', 'jukemove',
+         'catching', 'shortrouterunning', 'midrouterunning', 'deeprouterunning',
+         'spectacularcatch', 'catchintraffic', 'release', 'runblocking',
+         'passblocking', 'impactblocking', 'mancoverage', 'zonecoverage',
+         'tackle', 'hitpower', 'press', 'pursuit', 'kickaccuracy', 'kickpower',
+         'return']]
     return df
 
 

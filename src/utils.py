@@ -84,9 +84,9 @@ def get_seasons_to_update(root_path, feature_store_name):
             if temp > fs_season:
                 fs_season = temp
     else:
-        fs_season = 2002
+        fs_season = 2001
     if fs_season == -1:
-        fs_season = 2002
+        fs_season = 2001
     return list(range(fs_season, current_season + 1))
 
 

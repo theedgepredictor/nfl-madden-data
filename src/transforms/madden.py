@@ -1,18 +1,64 @@
+import calendar
+import re
+from datetime import datetime
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
 from src.consts import HIGH_POSITION_MAPPER, POSITION_MAPPER
 from src.extracts.player_stats import collect_roster, collect_players
-from src.utils import name_filter
+from src.transforms.madden_registry import MaddenRegistry
+from src.utils import name_filter, find_year_for_season
+import os
 
+# ---------- 1.  Month lookup (names & abbreviations) -----------------------
+MONTH_TO_NUM = {m.lower(): i for i, m in enumerate(calendar.month_name) if m}
+MONTH_TO_NUM.update({m.lower(): i for i, m in enumerate(calendar.month_abbr) if m})
+# e.g. "july" → 7, "jul" → 7
+
+def _month_to_int(m) -> int | None:
+    """
+    Return 1-12 or None.
+    Accepts:
+      • "July" / "jul" / "JUL"
+      • 3          (int)
+      • "3" / "03" (str)
+      • 3.0000     (float)
+    """
+    if pd.isna(m):
+        return None
+    # 1-a  string names / abbreviations
+    key = str(m).strip().lower()
+    if key in MONTH_TO_NUM:
+        return MONTH_TO_NUM[key]
+    # 1-b  digits: "3" / "03" / 3 / 3.0000
+    try:
+        num = int(float(key))        # handles "3.0000" too
+        if 1 <= num <= 12:
+            return num
+    except ValueError:
+        pass
+    return None
+
+MADDEN_DIR = (Path(__file__).resolve()          # /project_root/src/my_module.py
+              .parents[2]                       # /project_root/
+              / "data" / "madden")     # /project_root/data/madden/raw
+
+def read_stage_madden_data(year):
+    return pd.read_csv(f'{MADDEN_DIR}/stage/{year}.csv')
 
 def read_raw_madden_data(year):
-    madden_dir = '../../../nfl-madden-data/data/madden/raw'
-    df = pd.read_csv(f'{madden_dir}/{year}.csv')
+    df = pd.read_csv(f'{MADDEN_DIR}/raw/{year}.csv')
 
     if year == 2024:
         df = df.drop(columns=[i for i in df.columns if '/diff' in i] + ['Overall'])
         df.columns = [i.split('/')[1] if '/value' in i else i for i in df.columns]
+
+    if year == 2025:
+        df = df.drop(columns=[
+            'overall'
+        ])
 
     df.columns = [_madden_column_normalizer(i) for i in df.columns]
 
@@ -40,10 +86,10 @@ def read_raw_madden_data(year):
         else:
             df['shortrouterunning'] = df['routerunning']
 
-        if 'mediumrouterunning' in df.columns:
-            df['mediumrouterunning'] = df['mediumrouterunning'].fillna(df['routerunning'])
+        if 'midrouterunning' in df.columns:
+            df['midrouterunning'] = df['midrouterunning'].fillna(df['routerunning'])
         else:
-            df['mediumrouterunning'] = df['routerunning']
+            df['midrouterunning'] = df['routerunning']
 
         if 'deeprouterunning' in df.columns:
             df['deeprouterunning'] = df['deeprouterunning'].fillna(df['routerunning'])
@@ -66,26 +112,92 @@ def read_raw_madden_data(year):
         df = df.drop(columns=['overall\nrating'])
 
     if 'birthday' in df.columns:
-        df['birthdate'] = df['birthyear'].astype(str) + '-' + df['birthmonth'].astype(str) + '-' + df['birthday'].astype(str)
+        def _row_to_date(r):
+            d_raw, m_raw, y_raw = r['birthday'], r['birthmonth'], r['birthyear']
+
+            if pd.isna(d_raw) or pd.isna(m_raw) or pd.isna(y_raw):
+                return pd.NaT
+
+            try:
+                day = int(float(d_raw))  # 23.000 → 23
+                year = int(float(y_raw))  # 1976.000 → 1976
+                month = _month_to_int(m_raw)
+                if month is None:
+                    return pd.NaT
+                return pd.Timestamp(year=year, month=month, day=day)
+            except Exception:
+                return pd.NaT
+        df['birthdate'] = df.apply(_row_to_date, axis=1)
         df = df.drop(columns=['birthyear', 'birthmonth', 'birthday'])
 
+
+    if 'birthdate' in df.columns:
+        def _century_fix(yy: int) -> int:
+            return 2000 + yy if yy < 35 else 1900 + yy
+        def _safe_ts(y, m, d):
+            try:
+                return pd.Timestamp(year=y, month=m, day=d)
+            except ValueError:
+                return pd.NaT
+
+        def _parse_cell(x):
+            if pd.isna(x):
+                return pd.NaT
+
+            # --- digits patterns -------------------------------------
+            x_str = str(x).strip()
+            if x_str.isdigit():
+                n = len(x_str)
+
+                if n == 6:  # MMDDYY
+                    mm, dd, yy = int(x_str[:2]), int(x_str[2:4]), int(x_str[4:])
+                    return _safe_ts(_century_fix(yy), mm, dd)
+
+                if n == 5:  # MDDYY
+                    mm, dd, yy = int(x_str[0]), int(x_str[1:3]), int(x_str[3:])
+                    return _safe_ts(_century_fix(yy), mm, dd)
+
+                if n == 4:  # MDYY  ← NEW branch
+                    mm, dd, yy = int(x_str[0]), int(x_str[1]), int(x_str[2:])
+                    return _safe_ts(_century_fix(yy), mm, dd)
+
+            # --- fast path: already a date-like string ----------------
+            try:
+                ts = pd.to_datetime(x, errors="raise")
+                return ts.normalize()
+            except Exception:
+                return pd.NaT
+
+        if year in [2018, 2019]: # 32589 like datetimes
+            df['birthdate'] = df['birthdate'].apply(_parse_cell)
+        elif year in [2021, 2023]:
+            df['birthdate'] = pd.NaT ## Unparseable datetime...
+        else:
+            df['birthdate'] = pd.to_datetime(df['birthdate'], format='mixed')
+
+
+    df['team'] = df['team'].str.replace("_", " ").str.strip()
     df['team'] = df['team'].str.strip().str.split(' ').str[-1]
 
     team_mapper = {
         'Bucs': 'Buccaneers',
         'Team': 'Commanders',
-        'Redskins': 'Commanders'
+        'Redskins': 'Commanders',
+        'Agents': 'FREEAGENT',
+        'Agent': 'FREEAGENT',
+        'free agents': 'FREEAGENT',
+
     }
-    df['team'] = df.team.replace(team_mapper)
+    df['team'] = df.team.str.title().replace(team_mapper)
 
     nflverse_team_mapping = {
         'Bears': 'CHI', 'Bengals': 'CIN', 'Bills': 'BUF', 'Broncos': 'DEN', 'Browns': 'CLE',
         'Buccaneers': 'TB', 'Cardinals': 'ARI', 'Chargers': 'LAC', 'Chiefs': 'KC', 'Colts': 'IND',
-        'Cowboys': 'DAL', 'Dolphins': 'MIA', 'Eagles': 'PHI', 'Falcons': 'ATL', '49ers': 'SF',
+        'Cowboys': 'DAL', 'Dolphins': 'MIA', 'Eagles': 'PHI', 'Falcons': 'ATL', '49Ers': 'SF',
         'Giants': 'NYG', 'Jaguars': 'JAX', 'Jets': 'NYJ', 'Lions': 'DET', 'Packers': 'GB',
         'Panthers': 'CAR', 'Patriots': 'NE', 'Raiders': 'LV', 'Rams': 'LA', 'Ravens': 'BAL',
         'Commanders': 'WAS', 'Saints': 'NO', 'Seahawks': 'SEA', 'Steelers': 'PIT', 'Texans': 'HOU',
-        'Titans': 'TEN', 'Vikings': 'MIN'
+        'Titans': 'TEN', 'Vikings': 'MIN','Jagaurs':'JAX'
     }
     df['team'] = df.team.replace(nflverse_team_mapping)
 
@@ -176,13 +288,20 @@ def read_raw_madden_data(year):
         'acceleration',
         'speed',
         'stamina',
-        # Strength / Fitness
+        # Strength / Fitness / General
+        #'importance',
         'strength',
         'toughness',
         'injury',
         'awareness',
         'jumping',
         'trucking',
+        'archetype',
+        'runningstyle',
+        'changeofdirection',
+        #'elusiveness',
+        'playrecognition',
+
         # Passing
         'throwpower',
         'throwaccuracyshort',
@@ -219,20 +338,32 @@ def read_raw_madden_data(year):
         'kickaccuracy',
         'kickpower',
         'return',
+        # Meta
+        'jerseynumber',
+        'yearspro',
+        'age',
+        'birthdate',
     ]
     for col in madden_cols:
         if col not in df.columns:
             df[col] = None
-    return df[
-        [
-            'madden_id',
-            'team',
-            'season',
-            'fullname',
-            'position_group',
-            'overallrating',
-        ] + madden_cols
-        ]
+
+    df.jerseynumber = df.jerseynumber.astype(str)
+    df.loc[df.jerseynumber.notnull(), 'jerseynumber'] = df.loc[df.jerseynumber.notnull(), 'jerseynumber'].astype(str).str.replace('#','')
+
+    df = df[
+    [
+        'madden_id',
+        'team',
+        'season',
+        'fullname',
+        'high_pos_group',
+        'position_group',
+        'position',
+        'overallrating',
+    ] + madden_cols
+    ]
+    return df
 
 
 def _madden_column_normalizer(col):
@@ -261,7 +392,7 @@ def _madden_column_normalizer(col):
     new_col = new_col.replace('shortrouteruning', 'shortrouterunning')
     new_col = new_col.replace('shortrr', 'shortrouterunning')
     # Medium Route Running
-    new_col = new_col.replace('mediumrr', 'mediumrouterunning')
+    new_col = new_col.replace('mediumrr', 'midrouterunning')
     # Deep Route Running
     new_col = new_col.replace('deeprr', 'deeprouterunning')
     new_col = new_col.replace('speccatch', 'spectacularcatch')
@@ -290,7 +421,9 @@ def _madden_column_normalizer(col):
     if 'position' in new_col or 'pos' == new_col:
         new_col = new_col.replace(new_col, 'position')
     if 'jers' in new_col:
-        new_col = new_col.replace(new_col, 'jersey_number')
+        new_col = new_col.replace(new_col, 'jerseynumber')
+    if new_col == 'number':
+        new_col = new_col.replace(new_col, 'jerseynumber')
     if new_col == 'impactblock':
         new_col = new_col.replace('impactblock', 'impactblocking')
     if new_col == 'runblock':
@@ -314,15 +447,18 @@ def _madden_column_normalizer(col):
     new_col = new_col.replace('kickreturn', 'return')
     if new_col == 'experience':
         new_col = new_col.replace('experience', 'yearspro')
-    # new_col = new_col.replace('#', 'jersey_number')
+    if new_col == 'teamname':
+        new_col = new_col.replace('teamname', 'team')
+    if new_col == 'jersey#':
+        new_col = new_col.replace('jersey#', 'jerseynumber')
     new_col = new_col.replace(' ', '')
+
+
 
     return new_col
 
 
 from rapidfuzz import process, fuzz
-
-
 def fuzzy_match_names(row, player_df, threshold=70):
     # Filter Madden players by team, position_group, and season first
     filtered_players = player_df[
@@ -392,6 +528,46 @@ def impute_madden_ratings_for_all_columns(final_df, columns_to_impute):
         final_df = final_df.groupby('player_id', group_keys=False).apply(lambda x: interpolate_column(x, col))
     return final_df
 
+def stage_madden_season_data(season):
+    """
+    Clean madden data and normalize madden columns into standardized format
+
+    :param season:
+    :return:
+    """
+
+    madden_df = read_raw_madden_data(season)
+    return madden_df
+
+def _stage_validation_set(frames):
+    team_counts = []
+    column_counts = []
+    for season, frame in frames.items():
+        team_counts.extend(frame.team.values)
+        column_counts.extend(frame.columns)
+    column_counts = pd.Series(column_counts).value_counts().to_dict()
+    for i,j in column_counts.items():
+        if j != len(frames.items()):
+            raise Exception(f"Stage Validation failed on column count mis match: {column_counts}")
+    team_counts = pd.Series(team_counts).value_counts().to_dict()
+    if len(team_counts.items()) != 33:
+        raise Exception(f"Stage Validation failed on team count mismatch: {column_counts}")
+
+
+
+def make_stage_madden(load_seasons):
+    frames = {}
+    column_list = []
+    for season in load_seasons:
+        frame = stage_madden_season_data(season)
+        frames[season] = frame
+        column_list.extend(frame.team.values)
+    madden_counts = pd.Series(column_list).value_counts().to_dict()
+    _stage_validation_set(frames)
+    return frames
+
+
+
 
 def normalize_madden_data(season, debug=False):
     """
@@ -420,7 +596,17 @@ def normalize_madden_data(season, debug=False):
         'overallrating',
     ]].copy()
     madden_join_df['fullname'] = madden_join_df['fullname'].str.replace('.', '').str.replace(' II', '').str.replace(' III', '').str.replace(' IV', '')
-    madden_join_df = madden_join_df[madden_join_df['position_group'] == 'quarterback'].copy()
+    wth = madden_join_df[madden_join_df.fullname.str.contains('#')].copy()
+    if wth.shape[0] != 0:
+        wth['fullname'] = wth['fullname'].astype(str)
+        wth['fullname'] = wth['fullname'].str.extract('(\d+)')
+        wth = wth.rename(columns={"fullname":"jersey_number"})
+        for _, row in wth.iterrows():
+
+            ### Finish this out for fullname (jersey number) and team to determine actual name and add back into raw madden
+            roster_check = collect_roster(season)
+            a = roster_check[((roster_check.jersey_number==row['jersey_number'])&(roster_check.position_group==row['position_group'])&(roster_check.team == row['team']))]
+            print(a)
 
     final_df = join_with_fuzzy_matching(madden_join_df.copy(), base_players_df.copy())
     final_df = final_df[['player_id', 'season', 'madden_id', 'overallrating', 'position_group']].copy()
@@ -502,12 +688,21 @@ def normalize_madden_data(season, debug=False):
     final_df = pd.merge(final_df, madden_df[['season', 'madden_id'] + madden_cols], how='left', on=['madden_id', 'season'])
     return final_df, madden_join_df[~madden_join_df.madden_id.isin(joined_madden_ids)].copy()
 
+
+
 def make_processed_madden(load_seasons):
     frames = {}
-    missed = []
-    for season in load_seasons:
-        frame, missed_df = normalize_madden_data(season, debug=False)
+    madden_registry = MaddenRegistry()
+    madden_registry.define_registry()
+    full_unmatched = madden_registry.missed
+    #player_registry = madden_registry.player_registry
+    pre_season_registry = madden_registry.pre_season_registry
+
+    for season in pre_season_registry.season.unique():
+        frame = pre_season_registry[pre_season_registry.season==season].copy()
         frames[season] = frame
     return frames
 
 
+if __name__ == '__main__':
+    a = make_processed_madden(list(range(2001, 2026)))
