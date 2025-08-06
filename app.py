@@ -250,6 +250,7 @@ with main_tabs[0]:
     if df_team.empty:
         st.warning("No players found for this team.")
     else:
+        st.markdown("Explore the complete roster broken down by position groups. See how the team is structured across offense, defense, and special teams.")
         # High‑level tabs: off / def / st / NA
         high_groups = df_team["high_pos_group"].dropna().unique().tolist()
         high_tabs = st.tabs(high_groups) if len(high_groups) > 1 else [st.container()]
@@ -268,19 +269,41 @@ with main_tabs[0]:
 
 # === 2. Player Analysis tab ===================================================
 with main_tabs[1]:
-    st.subheader(f"Player Analysis – {team_choice} {season_choice}")
-
-    if df_team.empty:
-        st.warning("No players found for this team.")
+    st.subheader("Player Analysis")
+    
+    # Add filter mode toggle
+    filter_mode = st.radio(
+        "Filter Players By",
+        ["Team", "Position Group"],
+        horizontal=True,
+        help="Choose to view players by team or by position group across all teams"
+    )
+    
+    if filter_mode == "Team":
+        st.markdown(f"### {team_choice} Players – {season_choice}")
+        player_df = df_team
     else:
-        # Player selector
+        position_groups = sorted(df_season['position_group'].unique())
+        selected_position = st.selectbox("Select Position Group", position_groups)
+        st.markdown(f"### {selected_position} Players – {season_choice}")
+        player_df = df_season[df_season['position_group'] == selected_position].sort_values('overallrating', ascending=False).reset_index(drop=True)
+
+    if player_df.empty:
+        st.warning("No players found for the selected filter.")
+    else:
+        st.markdown("Dive deep into individual player ratings. How does this player compare to others at their position? What are their strengths and weaknesses?")
+        # Player selector with team info
         player_choice = st.selectbox(
             "Select Player",
-            df_team['fullname'].tolist(),
-            format_func=lambda x: f"{x} ({df_team[df_team['fullname'] == x]['position'].iloc[0]} - {int(df_team[df_team['fullname'] == x]['overallrating'].iloc[0])} OVR)"
+            player_df['fullname'].tolist(),
+            format_func=lambda x: (
+                f"{x} ({player_df[player_df['fullname'] == x]['position'].iloc[0]} - "
+                f"{player_df[player_df['fullname'] == x]['team'].iloc[0]} - "
+                f"{int(player_df[player_df['fullname'] == x]['overallrating'].iloc[0])} OVR)"
+            ),
         )
 
-        player = df_team[df_team['fullname'] == player_choice].iloc[0]
+        player = player_df[player_df['fullname'] == player_choice].iloc[0]
         position_group = player['position_group']
 
         # Get attribute rankings
@@ -298,7 +321,7 @@ with main_tabs[1]:
                 f"{int(player['overallrating'])}",
                 f"#{int(pos_rank[player_idx])}/{total_players} {position_group}"
             )
-
+        
         # Display attribute categories in rows of 3
         categories = [cat for cat, attrs in CATEGORY_MAP.items() 
                      if any(attr in rankings for attr in attrs)]
@@ -437,6 +460,7 @@ with main_tabs[2]:
         starters_only = st.checkbox("Show Starters Only", value=True, key="team_starters")
         # High position group summary
         st.markdown("### By High Position Group (Off / Def / ST)")
+        st.markdown("What side of the ball is higher rated for the team?")
         st.dataframe(group_stats(df_team, "high_pos_group", starters_only), hide_index=True, use_container_width=True)
 
         # Position group summary
@@ -445,6 +469,7 @@ with main_tabs[2]:
 
         # Snapshot
         st.markdown("### Overall Snapshot")
+        st.markdown("Quick overview of the team's roster size and overall team rating. How does this compare to other teams in the league?")
         st.metric("Total Players", len(df_team))
         st.metric("Average Overall Rating", round(df_team["overallrating"].mean(), 2))
 
@@ -454,21 +479,21 @@ with main_tabs[3]:
     if df_season.empty:
         st.info("No player data available for this season.")
     else:
+        st.markdown("Compare team strengths across the league. See how each team's position groups stack up against the competition.")
+        
         # Toggle for starters only
         starters_only = st.checkbox("Show Starters Only", value=True, key="season_starters")
+        st.markdown("*Toggle between full roster and starters-only view to see how depth impacts team ratings.*")
 
         # High position group summary
         st.markdown("### By High Position Group (Off / Def / ST)")
-        st.dataframe(group_stats(df_season, "high_pos_group", starters_only), hide_index=True, use_container_width=True)
+        st.markdown("Which team has the highest ranked Offense?")
+        st.dataframe(season_pivot(df_season, "high_pos_group", starters_only), use_container_width=True)
 
         # Position group summary
         st.markdown("### By Position Group")
-        st.dataframe(group_stats(df_season, "position_group", starters_only), hide_index=True, use_container_width=True)
-
-        # Pivot table of average rating by position group
-        st.markdown("### Average Rating by Position Group")
-        pivot = season_pivot(df_season, "position_group", starters_only)
-        st.dataframe(pivot, use_container_width=True)
+        st.markdown("Which team has the highest ranked WRs?")
+        st.dataframe(season_pivot(df_season, "position_group", starters_only), use_container_width=True)
 
 # ---------------- Downloads -------------------------------------------------
 with st.sidebar:
