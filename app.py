@@ -23,9 +23,6 @@ Run with `streamlit run streamlit_madden_app.py`.
 from pathlib import Path
 from typing import List
 
-import pandas as pd
-import streamlit as st
-
 ###############################################################################
 # Configuration
 ###############################################################################
@@ -225,8 +222,7 @@ st.set_page_config(
         'Get Help': 'https://github.com/theedgepredictor/nfl-madden-data',
         'Report a bug': 'https://github.com/theedgepredictor/nfl-madden-data/issues',
         'About': 'NFL Madden Data Analytics Platform'
-    },
-    theme="dark"  # This sets dark mode as default
+    }
 )
 
 st.title("🏈 Madden Data Analysis")
