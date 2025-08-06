@@ -8,7 +8,7 @@ import pandas as pd
 
 from src.consts import HIGH_POSITION_MAPPER, POSITION_MAPPER
 from src.extracts.player_stats import collect_roster, collect_players
-from src.transforms.madden_registry import MaddenRegistry
+
 from src.utils import name_filter, find_year_for_season
 import os
 
@@ -195,7 +195,7 @@ def read_raw_madden_data(year):
         'Buccaneers': 'TB', 'Cardinals': 'ARI', 'Chargers': 'LAC', 'Chiefs': 'KC', 'Colts': 'IND',
         'Cowboys': 'DAL', 'Dolphins': 'MIA', 'Eagles': 'PHI', 'Falcons': 'ATL', '49Ers': 'SF',
         'Giants': 'NYG', 'Jaguars': 'JAX', 'Jets': 'NYJ', 'Lions': 'DET', 'Packers': 'GB',
-        'Panthers': 'CAR', 'Patriots': 'NE', 'Raiders': 'LV', 'Rams': 'LA', 'Ravens': 'BAL',
+        'Panthers': 'CAR', 'Patriots': 'NE', 'Raiders': 'LV', 'Rams': 'LAR', 'Ravens': 'BAL',
         'Commanders': 'WAS', 'Saints': 'NO', 'Seahawks': 'SEA', 'Steelers': 'PIT', 'Texans': 'HOU',
         'Titans': 'TEN', 'Vikings': 'MIN','Jagaurs':'JAX'
     }
@@ -690,19 +690,4 @@ def normalize_madden_data(season, debug=False):
 
 
 
-def make_processed_madden(load_seasons):
-    frames = {}
-    madden_registry = MaddenRegistry()
-    madden_registry.define_registry()
-    full_unmatched = madden_registry.missed
-    #player_registry = madden_registry.player_registry
-    pre_season_registry = madden_registry.pre_season_registry
 
-    for season in pre_season_registry.season.unique():
-        frame = pre_season_registry[pre_season_registry.season==season].copy()
-        frames[season] = frame
-    return frames
-
-
-if __name__ == '__main__':
-    a = make_processed_madden(list(range(2001, 2026)))

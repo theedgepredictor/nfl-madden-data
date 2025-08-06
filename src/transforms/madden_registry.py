@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 
 from rapidfuzz import process, fuzz
@@ -21,6 +23,74 @@ NFL_SEASON_OPENERS = {
     2024: "2024-09-05", 2025: "2025-09-04",
 }
 
+MADDEN_ATTRIBUTES = [
+        #'overallrating',
+        # Pace
+        'agility',
+        'acceleration',
+        'speed',
+        'stamina',
+        # Strength / Fitness / General
+        #'importance',
+        'strength',
+        'toughness',
+        'injury',
+        'awareness',
+        'jumping',
+        'trucking',
+        'archetype',
+        'runningstyle',
+        'changeofdirection',
+        #'elusiveness',
+        'playrecognition',
+
+        # Passing
+        'throwpower',
+        'throwaccuracyshort',
+        'throwaccuracymid',
+        'throwaccuracydeep',
+        'playaction',
+        'throwonrun',
+        # Rushing
+        'carrying',
+        'ballcarriervision',
+        'stiffarm',
+        'spinmove',
+        'jukemove',
+        # Receiving
+        'catching',
+        'shortrouterunning',
+        'midrouterunning',
+        'deeprouterunning',
+        'spectacularcatch',
+        'catchintraffic',
+        'release',
+        # Blocking
+        'runblocking',
+        'passblocking',
+        'impactblocking',
+        # Coverage / Defense
+        'mancoverage',
+        'zonecoverage',
+        'tackle',
+        'hitpower',
+        'press',
+        'pursuit',
+        # Special Teams
+        'kickaccuracy',
+        'kickpower',
+        'return',
+    ]
+
+MADDEN_DIR = (Path(__file__).resolve()          # /project_root/src/my_module.py
+              .parents[2]                       # /project_root/
+              / "data" / "madden")     # /project_root/data/madden/raw
+
+def read_processed_madden_data(year):
+    return pd.read_csv(f'{MADDEN_DIR}/processed/{year}.csv')
+
+def read_missed_madden_data():
+    return pd.read_csv(f'{MADDEN_DIR}/missed/missed.csv')
 # ---------------------------------------------------------------
 # helper → age on season opener
 # ---------------------------------------------------------------
@@ -67,8 +137,8 @@ class MaddenRegistry:
     def define_registry(self):
         self.apply()
         full_matches, full_unmatched = self.mapper()
+
         registry = full_matches.groupby("player_id")['madden_id'].agg(lambda s: s.mode().iloc[0]).reset_index().drop_duplicates(['madden_id'])
-        self.missed = full_unmatched.copy()
         MANUAL_MAPPER = {
             "DOMANICKDAVIS_o_rush": "00-0021979",
             "ANTHONYSIMMONS_d_lb": "00-0014889",
@@ -88,10 +158,10 @@ class MaddenRegistry:
         registry_meta = self.nflverse_player_rosters.drop_duplicates(["player_id"])[["player_id", "fullname", "birthdate"]]
         player_registry = registry.merge(registry_meta, how="left", on=["player_id"])
         self.player_registry = player_registry
-        pre_season_player_registry_meta = self.nflverse_player_rosters.drop_duplicates(["player_id", 'season'])[["player_id", 'season', 'fullname', 'team', 'high_pos_group',  'position', 'jerseynumber', 'yearspro']]
+        pre_season_player_registry_meta = self.nflverse_player_rosters.drop_duplicates(["player_id", 'season'])[["player_id", 'season', 'fullname', 'team', 'high_pos_group', 'position_group', 'position', 'jerseynumber', 'yearspro','birthdate']]
+        pre_season_player_registry_meta["age"] = pre_season_player_registry_meta.apply(lambda r: _age_on_season_start(pd.to_datetime(r.birthdate), r.season), axis=1)
         pre_season_registry = pre_season_player_registry_meta.merge(registry, on=['player_id'], how="left")
         pre_season_registry = pd.merge(pre_season_registry, get_static_players(), on='player_id', how='left')
-
 
         registries = []
         ### Add AV column to preseason registry
@@ -99,8 +169,9 @@ class MaddenRegistry:
             #pre_season_registry_unmatched = pre_season_registry[pre_season_registry.madden_id.isnull()].copy()
             #pre_season_registry_matched = pre_season_registry[pre_season_registry.madden_id.notnull()].copy()
             df = pre_season_registry[pre_season_registry.season==season].copy()
-            df['is_rookie'] = (df['rookie_season'] == season) & (df.years_exp == 0)
+            df['is_rookie'] = (df['rookie_season'] == season) & (df.yearspro == 0)
 
+            ## ADD (Previous Season) AWARDS, SEASON BASED HIGHLIGHTS HERE
 
             ### AV Extractor (Previous Season)
             av_df = get_approximate_value(season - 1)[[
@@ -109,7 +180,7 @@ class MaddenRegistry:
             ]].rename(columns={'player_id': 'pfr_id', 'approximate_value': 'last_season_av'})
             df = pd.merge(df, av_df, on='pfr_id', how='left')
 
-            rookie_approx_value_df = pre_season_registry[df['is_rookie'] == True].copy()
+            rookie_approx_value_df = df[df['is_rookie'] == True].copy()
             rookie_approx_value_df.draft_round = rookie_approx_value_df.draft_round.fillna(8)
             rookie_approx_value_df.draft_pick = rookie_approx_value_df.draft_pick.fillna(rookie_approx_value_df.draft_pick.max() + 1)
             rookie_approx_value_df = rookie_approx_value_df.apply(apply_rookie_av, axis=1)
@@ -117,11 +188,10 @@ class MaddenRegistry:
             df = df[df['is_rookie'] == False].copy()
             df = pd.concat([df, rookie_approx_value_df], ignore_index=True).drop_duplicates(subset=['player_id'], keep='first')
             registries.append(df)
-        self.pre_season_registry = pd.concat(registry,ignore_index=True)
 
-
-
-
+        self.pre_season_registry = pd.concat(registries,ignore_index=True)
+        self.pre_season_registry = pd.merge(self.pre_season_registry, self.base_ratings[['season', 'fullname', 'team', 'position_group','overallrating']+MADDEN_ATTRIBUTES], on=['season', 'fullname', 'team', 'position_group'], how='left')
+        self.missed = pd.merge(full_unmatched.copy().drop(columns=['overallrating','fullname_clean']), self.base_ratings[['season', 'fullname', 'team', 'position_group','overallrating']+MADDEN_ATTRIBUTES], on=['season', 'fullname', 'team', 'position_group'], how='left')
 
     def _madden_imputer(self):
         pass
@@ -155,6 +225,7 @@ class MaddenRegistry:
     def apply_madden_uid(self):
         print("Applying new madden id map")
         self.staged_madden_ratings['madden_id'] = self.staged_madden_ratings.apply(self._compute_new_madden_id, axis=1)
+        self.base_ratings['madden_id'] = self.base_ratings.apply(self._compute_new_madden_id, axis=1)
 
     def apply_birthdate_pool(self):
         print("Applying birthdate pool")
@@ -223,6 +294,11 @@ class MaddenRegistry:
 
 
     def fuzzy_match_nflverse_to_madden(self, season):
+        """
+
+        :param season:
+        :return:
+        """
         print(f"Fuzzy matching for {season}")
 
         # ---------- Prep Data ----------
@@ -371,3 +447,22 @@ class MaddenRegistry:
         print(f"Successfully mapped {matches.madden_id.nunique()} madden players; {unmatched.madden_id.nunique()} unmatched.")
 
         return matches, unmatched, nfl_unmapped
+
+def make_processed_madden(load_seasons):
+    frames = {}
+    madden_registry = MaddenRegistry()
+    madden_registry.define_registry()
+    full_unmatched = madden_registry.missed
+    #player_registry = madden_registry.player_registry
+    pre_season_registry = madden_registry.pre_season_registry
+    full_unmatched.to_csv(f'{MADDEN_DIR}/missed/missed.csv', index=False)
+    for season in pre_season_registry.season.unique():
+        frame = pre_season_registry[pre_season_registry.season==season].copy()
+        frames[season] = frame
+    return frames
+
+
+if __name__ == '__main__':
+    #### Rerun w base madden being joined correctly with the new madden_ids right now no madden stats are added
+    #### also need to make sure we add madden stats the the missing category madden stats too
+    a = make_processed_madden(list(range(2001, 2026)))

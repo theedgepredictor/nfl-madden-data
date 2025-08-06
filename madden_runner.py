@@ -3,7 +3,9 @@ import os
 import pandas as pd
 
 from src.extracts.madden import make_raw_madden
-from src.transforms.madden import make_stage_madden, make_processed_madden
+from src.modeling.imputer import make_dataset_madden
+from src.transforms.madden import make_stage_madden
+from src.transforms.madden_registry import make_processed_madden
 from src.utils import get_seasons_to_update, find_year_for_season
 
 raw_madden_meta = {
@@ -21,10 +23,18 @@ processed_madden_meta = {
     "start_season": 2001,
     "raw_obj": make_processed_madden,
     }
+
+dataset_madden_meta = {
+    "name": 'dataset',
+    "start_season": 2001,
+    "raw_obj": make_dataset_madden,
+}
+
 FEATURE_STORE_METAS = [
     #raw_madden_meta,
-    #stage_madden_meta,
-    processed_madden_meta
+    stage_madden_meta,
+    processed_madden_meta,
+    dataset_madden_meta
 ]
 
 
@@ -50,7 +60,10 @@ def madden_runner():
         if not skip_raw:
             frames = fs_meta_obj['raw_obj'](update_seasons)
             for season, df in frames.items():
-                df.to_csv(f"{root_path}/{feature_store_name}/{season}.csv", index=False)
+                if feature_store_name == 'dataset':
+                    df.to_parquet(f"{root_path}/{feature_store_name}/{season}.parquet", index=False)
+                else:
+                    df.to_csv(f"{root_path}/{feature_store_name}/{season}.csv", index=False)
 
 if __name__ == '__main__':
     madden_runner()

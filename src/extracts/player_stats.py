@@ -183,7 +183,7 @@ def collect_players():
 
 
 def collect_av(season):
-    return pd.read_csv(f"../../data/pfr/approximate_value/{season}.csv")
+    return pd.read_csv(f'https://github.com/theedgepredictor/nfl-madden-data/raw/main/data/pfr/approximate_value/{season}.csv')
 
 def collect_raw_madden(season):
     return pd.read_csv(f"../../data/madden/raw/{season}.csv")
