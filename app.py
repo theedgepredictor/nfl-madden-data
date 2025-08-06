@@ -216,7 +216,24 @@ def format_attribute_cell(value: float, rank: int, total: int) -> str:
 # Streamlit UI
 ###############################################################################
 
-st.set_page_config(page_title="Madden Ratings Cleaner", page_icon="🏈", layout="wide")
+st.set_page_config(
+    page_title="Madden Ratings Cleaner",
+    page_icon="🏈",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Set dark mode theme
+st.markdown("""
+    <style>
+        /* Dark mode base colors */
+        :root {
+            --background-color: #0E1117;
+            --secondary-background-color: #262730;
+            --text-color: #FAFAFA;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 st.title("🏈 Madden Ratings")
 
@@ -329,12 +346,16 @@ with main_tabs[1]:
                             f"""<div style="
                                 margin: 4px 0;
                                 font-family: 'Inter', sans-serif;
+                                background-color: #262730;
+                                padding: 8px;
+                                border-radius: 4px;
                             ">
                                 <div style="
                                     display: flex;
                                     justify-content: space-between;
                                     margin-bottom: 2px;
                                     font-size: 14px;
+                                    color: #E6E6E6;
                                 ">
                                     <span>{attr.title()}</span>
                                     <span style="font-weight: bold;">{int(value)}</span>
@@ -342,7 +363,7 @@ with main_tabs[1]:
                                 <div style="
                                     width: 100%;
                                     height: 8px;
-                                    background-color: #E0E0E0;
+                                    background-color: #2C2C2C;
                                     border-radius: 4px;
                                     overflow: hidden;
                                 ">
@@ -356,7 +377,7 @@ with main_tabs[1]:
                                 <div style="
                                     text-align: right;
                                     font-size: 12px;
-                                    color: #666;
+                                    color: #9E9E9E;
                                     margin-top: 2px;
                                 ">
                                     #{rank}/{total}
