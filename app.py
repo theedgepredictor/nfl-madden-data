@@ -217,25 +217,19 @@ def format_attribute_cell(value: float, rank: int, total: int) -> str:
 ###############################################################################
 
 st.set_page_config(
-    page_title="Madden Ratings Cleaner",
+    page_title="NFL Madden App",
     page_icon="🏈",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://github.com/theedgepredictor/nfl-madden-data',
+        'Report a bug': 'https://github.com/theedgepredictor/nfl-madden-data/issues',
+        'About': 'NFL Madden Data Analytics Platform'
+    },
+    theme="dark"  # This sets dark mode as default
 )
 
-# Set dark mode theme
-st.markdown("""
-    <style>
-        /* Dark mode base colors */
-        :root {
-            --background-color: #0E1117;
-            --secondary-background-color: #262730;
-            --text-color: #FAFAFA;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-st.title("🏈 Madden Ratings")
+st.title("🏈 Madden Data Analysis")
 
 # ---------------- Sidebar ---------------------------------------------------
 with st.sidebar:
