@@ -1,6 +1,9 @@
 from pathlib import Path
 
 import pandas as pd
+from nfl_data_loader.api.sources.players.rosters.rosters import collect_roster
+from nfl_data_loader.utils.utils import find_year_for_season
+from nfl_data_loader.workflows.transforms.players.player import get_static_players, apply_rookie_av
 
 from rapidfuzz import process, fuzz
 
@@ -9,7 +12,6 @@ from rapidfuzz import process, fuzz
 # ---------------------------------------------------------------
 from src.extracts.madden import get_approximate_value
 from src.transforms.madden import read_stage_madden_data
-from src.transforms.player import get_static_players, apply_rookie_av
 
 NFL_SEASON_OPENERS = {
     2000: "2000-09-03", 2001: "2001-09-09", 2002: "2002-09-05", 2003: "2003-09-04",

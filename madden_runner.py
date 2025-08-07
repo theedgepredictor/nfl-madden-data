@@ -32,7 +32,7 @@ dataset_madden_meta = {
 
 FEATURE_STORE_METAS = [
     #raw_madden_meta,
-    stage_madden_meta,
+    #stage_madden_meta,
     processed_madden_meta,
     dataset_madden_meta
 ]
