@@ -6,3 +6,4 @@ openpyxl==3.1.5
 beautifulsoup4==4.12.3
 rapidfuzz
 scikit-learn
+nfl-data-loader

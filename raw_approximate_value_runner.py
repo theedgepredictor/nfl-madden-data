@@ -1,9 +1,9 @@
 import os
 
 import pandas as pd
+from nfl_data_loader.utils.utils import get_seasons_to_update, find_year_for_season
 
 from src.extracts.pfr import get_approximate_values
-from src.utils import get_seasons_to_update, find_year_for_season
 
 approximate_value_meta = {
     "name":'approximate_value',

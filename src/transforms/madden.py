@@ -5,9 +5,10 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from nfl_data_loader.api.sources.players.general.players import collect_players
+from nfl_data_loader.api.sources.players.rosters.rosters import collect_roster
 
 from src.consts import HIGH_POSITION_MAPPER, POSITION_MAPPER
-from src.extracts.player_stats import collect_roster, collect_players
 
 from src.utils import name_filter, find_year_for_season
 import os

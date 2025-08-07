@@ -3,11 +3,8 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import re
-from rapidfuzz import process, fuzz
 
-from src.consts import POSITION_MAPPER, HIGH_POSITION_MAPPER
-from src.extracts.player_stats import collect_roster
-from src.utils import name_filter, find_year_for_season
+from nfl_data_loader.utils.utils import name_filter
 
 
 def apply_merge_id(df):
@@ -93,3 +90,7 @@ def get_approximate_value(season):
         return df
     except:
         return pd.DataFrame()
+
+
+def collect_raw_madden(season):
+    return pd.read_csv(f"../../data/madden/raw/{season}.csv")

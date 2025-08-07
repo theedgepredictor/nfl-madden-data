@@ -1,7 +1,7 @@
 import pandas as pd
-
-from src.formatters import team_id_repl, score_clean
-from src.utils import df_rename_fold
+from nfl_data_loader.utils.formatters.general import df_rename_fold
+from nfl_data_loader.utils.formatters.reformat_game_scores import score_clean
+from nfl_data_loader.utils.formatters.reformat_team_name import team_id_repl
 
 
 def get_event_infos(season):

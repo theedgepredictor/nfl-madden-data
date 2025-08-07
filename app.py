@@ -30,10 +30,10 @@ from pathlib import Path
 from typing import List
 import pandas as pd
 import streamlit as st
-from src.consts import HIGH_POSITION_MAPPER, POSITION_MAPPER
+from nfl_data_loader.schemas.players.madden import CATEGORY_MAP
+from nfl_data_loader.schemas.players.position import POSITION_MAPPER, HIGH_POSITION_MAPPER
+
 from src.modeling.imputer import read_madden_dataset
-from src.modeling.consts import CATEGORY_MAP
-from src.extracts.player_stats import collect_roster
 
 ###############################################################################
 # Configuration

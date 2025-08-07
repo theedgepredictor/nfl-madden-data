@@ -87,3 +87,14 @@ data/
 
 - [Live Application](https://nfl-madden-app.streamlit.app/)
 - [Data Source](https://maddenratings.weebly.com)
+
+## TODO List
+
+1. Finalize data source list per season (with null counts)
+2. Explain steps (Jupyter Notebooks or markdown files)
+3. Better previous year AV imputation
+4. Add previous year awards (made_playoffs, probowl, sb_champ, etc) sportreference
+   1. https://www.pro-football-reference.com/awards/
+   2. https://www.pro-football-reference.com/years/2023/allpro.htm
+   3. https://www.pro-football-reference.com/years/2023/probowl.htm
+   4. https://www.pro-football-reference.com/awards/awards_2023.htm

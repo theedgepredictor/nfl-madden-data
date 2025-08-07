@@ -1,6 +1,5 @@
 import pandas as pd
-
-from src.extracts.player_stats import collect_espn_player_stats
+from nfl_data_loader.api.sources.players.boxscores.boxscores import collect_weekly_espn_player_stats
 
 
 def calculate_raw_passer_value(df):
@@ -74,7 +73,7 @@ def quarterback_rating_stats(season):
         #'fantasy_points',
         'fantasy_points_ppr'
     ]
-    player_weekly_stats_df = collect_espn_player_stats(season-1)
+    player_weekly_stats_df = collect_weekly_espn_player_stats(season-1)
     player_reg_season_stats_df = player_weekly_stats_df[((player_weekly_stats_df.position_group == 'quarterback') &(player_weekly_stats_df.season_type == 'REG'))].copy()[quarterback_attrs]
     player_reg_season_stats_df['VALUE_ELO'] = calculate_raw_passer_value(player_reg_season_stats_df)
     player_reg_season_stats_df['passer_rating'] = calculate_passer_rating(player_reg_season_stats_df)

@@ -1,12 +1,12 @@
 import os
 
 import pandas as pd
+from nfl_data_loader.utils.utils import get_seasons_to_update, find_year_for_season
 
 from src.extracts.madden import make_raw_madden
 from src.modeling.imputer import make_dataset_madden
 from src.transforms.madden import make_stage_madden
 from src.transforms.madden_registry import make_processed_madden
-from src.utils import get_seasons_to_update, find_year_for_season
 
 raw_madden_meta = {
     "name":'raw',

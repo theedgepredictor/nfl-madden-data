@@ -2,8 +2,9 @@ import time
 
 import pandas as pd
 import requests
+from nfl_data_loader.utils.utils import get_webpage_soup
 
-from src.utils import get_webpage_soup, pfr_request
+from src.utils import  pfr_request
 
 
 def get_approximate_values(update_seasons):

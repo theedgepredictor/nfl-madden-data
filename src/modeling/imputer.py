@@ -1,15 +1,15 @@
 from pathlib import Path
 
 import pandas as pd
+from nfl_data_loader.schemas.players.madden import TEAM_MAPPER, RUN_STYLE_MAPPER, ARCHETYPE_POSITION_MAPPERS, MADDEN_ATTRIBUTE_MAP, META, GENERAL_ATTRIBUTES
+from nfl_data_loader.schemas.players.position import HIGH_POSITION_MAPPER
+from nfl_data_loader.utils.utils import find_year_for_season
 from pandas.api.types import is_numeric_dtype
 from sklearn.experimental import enable_iterative_imputer  # noqa: F401
 from sklearn.impute import IterativeImputer
 from sklearn.linear_model import Ridge
 
-from src.consts import HIGH_POSITION_MAPPER
-from src.modeling.consts import META, GENERAL_ATTRIBUTES, MADDEN_ATTRIBUTE_MAP, TEAM_MAPPER, RUN_STYLE_MAPPER, ARCHETYPE_POSITION_MAPPERS
 from src.transforms.madden_registry import read_missed_madden_data, read_processed_madden_data
-from src.utils import find_year_for_season
 
 MADDEN_DIR = (Path(__file__).resolve()          # /project_root/src/my_module.py
               .parents[2]                       # /project_root/
